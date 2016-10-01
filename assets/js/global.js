@@ -4,7 +4,21 @@ $(function() {
         $(".nav-tabs a").click(function() {
             $(this).tab('show');
         });
+
+        $('a.menu1').click(function() {
+          $('div.control div#firstController').removeClass('hide');
+          $('div.control div#secondController').addClass('hide');
+        });
+        $('a.menu2').click(function() {
+          $('div.control div#secondController').removeClass('hide');
+          $('div.control div#firstController').addClass('hide');
+        });
+
     });
+    
+
+
+
 
     $('a[href*="#content-"]').click(function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -31,15 +45,12 @@ $(function() {
         if (!next.length) {
             next = $(this).siblings(':first');
         }
-        // previous.children(':first-child').clone().appendTo($(this));
         next.children(':first-child').clone().appendTo($(this));
-        // next.children(':next-child').clone().appendTo($(this));
 
         if (next.next().length > 0) {
             next.next().children(':first-child').clone().appendTo($(this));
         } else {
             $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-            // $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
         }
     });
 
@@ -52,7 +63,6 @@ $(function() {
     $('li.sign-in>.trigger').popover({
         html: true,
         content: function() {
-          $(this).addClass('active');
             return $(this).parent().find('.content').html();
         }
 
@@ -60,14 +70,9 @@ $(function() {
 
     $('body').on('click', function(e) {
         $('[data-toggle="popover"]').each(function() {
-            //the 'is' for buttons that trigger popups
-            //the 'has' for icons within a button that triggers a popup
             if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
                 $(this).popover('hide');
             }
         });
     });
-
-
-    // $("body").css('overflow', 'hidden');
 }); // END OF FUNCTION JQUERY

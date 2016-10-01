@@ -108,6 +108,22 @@ ul.nav li > a:hover, ul.nav li > a:focus, ul.nav li.active > a {
 	background-color: #fafafa;
 }
 
+#subsektor {
+	padding-top: 50px;
+	background-color: #fafafa;
+	height: auto;
+	padding-bottom: 150px;
+	/*height: 1000px;*/
+}
+
+#detail-subsektor {
+	background-color: #fafafa;
+	height: 1000px;
+	/*height: auto;*/
+	padding-top: 150px;
+	padding-bottom: 150px;
+}
+
 #license {
 	background-color: #28b6f6;
 	height: auto;
@@ -674,12 +690,25 @@ hr {
 
 /*---------------------------------------------------------*/
 
-ul.about-1,ul.about-2 {
+ul.about-1,ul.about-2{
 	color:#fff;
 	font-size: 20px;
 	list-style: none;
 	padding-left: 0;
 	margin-left: 0;
+}
+
+ul.about-1 > li > a,
+ul.about-2 > li > a {
+	color:#fff;
+	cursor: pointer;
+	transition: all .3s ease-in;
+}
+
+ul.about-1 > li > a:hover,
+ul.about-2 > li > a:hover {
+	color:#28b6f6;
+	transition: all .3s ease-in;
 }
 
 ul.social-media {
@@ -829,4 +858,100 @@ p.inner-desc {
 
 #detail-member p > a.btn {
 	margin-top: 25px;
+}
+
+/*-------------------------------------------------
+			SUBSEKTOR CSS SETTINGS
+-------------------------------------------------*/
+
+@media screen and (min-width: 1170px) {
+	.subsektor-content {
+		margin-top:120px;
+	}
+
+	.subsektor-container img {
+		max-height: 100px;
+		margin-left: auto;
+		margin-right: auto;
+		position:relative;
+	}
+
+	.subsektor-container {
+
+	}
+}
+
+.subsektor-container h4 {
+	margin-top: 40px;
+	font-size: 20px;
+	color: #555;
+	/*font-weight: 600;*/
+}
+
+.subsektor-container {
+	background-color: #eeeeee;
+	text-align: center;
+	border:2px solid #d5d5d5;
+	border-radius: 3px;
+	padding:35px 15px;
+	margin:0 10px;
+	min-height: 250px;
+	max-height: 250px;
+	/*height: 175px;*/
+}
+
+.subsektor-content .row:not(:first-child){
+	margin-top: 50px;
+}
+
+
+/*----------------------------------------------------------------
+				DETAIL SUBSEKTOR CSS SETTINGS
+----------------------------------------------------------------*/
+
+#detail-subsektor .img-subsektor {
+	max-height: 180px;
+	min-height: 180px;
+	position: relative;
+	/*margin-left: 100%;*/
+	/*margin-right: auto;*/
+	float: right;
+}
+
+@media screen and (min-width: 1170px) {
+	#detail-subsektor #detail-subsektor-desc {
+		margin-top: 0;
+	}
+}
+
+#detail-subsektor #detail-subsektor-desc {
+	color:#555;
+	font-weight: 600;
+}
+
+#detail-subsektor p {
+	font-size: 1.2em;
+	line-height: 2em;
+	color: #555;
+}
+
+#detail-subsektor .row:not(:first-child) {
+	margin-top: 50px;
+}
+
+#detail-subsektor .second-carousel .inner-content {
+	/*padding-left: 25px;
+	padding-right: 25px;*/
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+#detail-subsektor .second-carousel .inner-content {
+	overflow: hidden;
+}
+
+#detail-subsektor .second-carousel .inner-content h3 {
+	font-size: 24px;
+	text-align: center;
+	font-weight: 400;
 }

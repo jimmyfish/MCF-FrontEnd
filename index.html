@@ -186,8 +186,8 @@
 				<div class="second-carousel">
 					<div class="container">
 						<ul class="nav nav-tabs">
-							<li class="active"><a href="#menu1">Event yang akan datang</a></li>
-							<li><a href="#menu2">event yang lalu</a></li>
+							<li class="active"><a href="#menu1" class="menu1">Event yang akan datang</a></li>
+							<li><a href="#menu2" class="menu2">event yang lalu</a></li>
 						</ul>
 						<div class="tab-content">
 							<div id="menu1" class="tab-pane fade in active">
@@ -255,7 +255,7 @@
 								<div class="container">
 									<div class="row">
 										<div class="col-md-12">
-											<div class="carousel slide multi-item-carousel" id="theCarousel">
+											<div class="carousel slide multi-item-carousel" id="carousel2">
 												<div class="carousel-inner">
 													<div class="item active">
 														<div class="col-xs-4">
@@ -314,13 +314,24 @@
 							</div>
 						</div>
 						<div class="control">
-							<span class="left-controller">
-								<a href="#theCarousel" data-slide="prev"><i class="fa fa-chevron-left fa-2x"></i></a>
-								<a href="#theCarousel" data-slide="next"><i class="fa fa-chevron-right fa-2x"></i></a>
-							</span>
-							<span class="right-controller">
-								<a href="#" class="btn btn-purple">lihat semua event</a>
-							</span>
+							<div id="firstController">
+								<span class="left-controller">
+									<a href="#theCarousel" data-slide="prev"><i class="fa fa-chevron-left fa-2x"></i></a>
+									<a href="#theCarousel" data-slide="next"><i class="fa fa-chevron-right fa-2x"></i></a>
+								</span>
+								<span class="right-controller">
+									<a href="#" class="btn btn-purple">lihat semua event</a>
+								</span>
+							</div>
+							<div id="secondController" class="hide">
+								<span class="left-controller">
+									<a href="#carousel2" data-slide="prev"><i class="fa fa-chevron-left fa-2x"></i></a>
+									<a href="#carousel2" data-slide="next"><i class="fa fa-chevron-right fa-2x"></i></a>
+								</span>
+								<span class="right-controller">
+									<a href="#" class="btn btn-purple">lihat semua event</a>
+								</span>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -367,26 +378,6 @@
 								<h4 class="colaborator">Oleh : John Smith</h3>
 								
 							</div>
-							<!-- <div class="comment-colaboration">
-																						<a href="#" title="">
-																																					<h3 class="colaboration-text">Membutuhkan animator untuk Malang Creative Week</h3>
-																																					<h4 class="colaborator">Oleh : John Smith</h3>
-																						</a>
-							</div>
-							<div class="comment-colaboration">
-																						<a href="#" title="">
-																																					<h3 class="colaboration-text">Temen-temen subsektor fotografi mohon infonya untuk model foto baju</h3>
-																																					<h4 class="colaborator">Oleh : John Smith</h3>
-																						</a>
-																						
-							</div>
-							<div class="comment-colaboration">
-																						<a href="#" title="">
-																																					<h3 class="colaboration-text">Volunteer untuk event bekraf bulan depan di Gajayana</h3>
-																																					<h4 class="colaborator">Oleh : John Smith</h3>
-																						</a>
-																						
-							</div> -->
 							<div class="btn-colaboration">
 								<a href="#" class="btn btn-purple">Lihat kolaborasi lainnya</a>
 							</div>
@@ -748,20 +739,21 @@
 					</div>
 					<div class="col-md-2">
 						<ul class="about-1">
-							<li>Tentang MCF</li>
-							<li>Visi</li>
-							<li>Misi</li>
-							<li>Tujuan</li>
-							<li>Program</li>
+							<li><a href="#">Tentang MCF</a></li>
+							<!-- <li>Tentang MCF</li> -->
+							<li><a href="#">Visi</a></li>
+							<li><a href="#">Misi</a></li>
+							<li><a href="#">Tujuan</a></li>
+							<li><a href="#">Program</a></li>
 						</ul>
 					</div>
 					<div class="col-md-4">
 						<ul class="about-2">
-							<li>Direktori Industri Kreatif Kota Malang</li>
-							<li>Subsektor Industri Kreatif</li>
-							<li>Galery</li>
-							<li>Event</li>
-							<li>Forum Kolaborasi</li>
+							<li><a href="#">Direktori Industri Kreatif Kota Malang</a></li>
+							<li><a href="#">Subsektor Industri Kreatif</a></li>
+							<li><a href="#">Galery</a></li>
+							<li><a href="#">Event</a></li>
+							<li><a href="#">Forum Kolaborasi</a></li>
 						</ul>
 					</div>
 					<div class="col-md-4">
