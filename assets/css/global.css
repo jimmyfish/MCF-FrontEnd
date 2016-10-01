@@ -99,6 +99,15 @@ ul.nav li > a:hover, ul.nav li > a:focus, ul.nav li.active > a {
 	height: auto;
 }
 
+#detail-member {
+	height: auto;
+	/*height: 620px;*/
+	/*margin-top: 34px;*/
+	padding-top: 34px;
+	margin-bottom: 100px;
+	background-color: #fafafa;
+}
+
 #license {
 	background-color: #28b6f6;
 	height: auto;
@@ -778,4 +787,46 @@ span.forgot-password a{
 	border-radius: 2px;
 	color: #fff;
 	text-transform: uppercase;
+}
+
+
+/*---------------------------------------------------
+			DETAIL MEMBER CSS SETTINGS
+---------------------------------------------------*/
+
+@media screen and (min-width: 1170px) {
+
+	.detail-member-desc {
+		margin-left: 20%;
+		font-size: 1.3em;
+		margin-bottom: 40px;
+	}
+}
+
+.img-col {
+	text-align: center;
+	vertical-align: middle;
+}
+
+#detail-member .description .fa {
+	color: #2ab5f6;
+	margin-right: 10px;
+}
+
+#detail-member .description h2 {
+	margin-top: 0;
+	margin-bottom: 25px;
+}
+
+#detail-member .description p {
+	font-size:1.2em;
+}
+
+p.inner-desc {
+	margin-top:40px;
+	line-height: 2.5em;
+}
+
+#detail-member p > a.btn {
+	margin-top: 25px;
 }
