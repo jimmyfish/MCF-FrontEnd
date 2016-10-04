@@ -8,8 +8,17 @@ a,a:hover {
     display: none;
 }
 
+.navbar {
+	border:0;
+}
+
 body {
 	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.separator {
+	content: ' ';
+	width: 125px;
 }
 
 .navbar-brand {
@@ -30,14 +39,51 @@ body {
 	height:80px;
 }
 
-.nav > li > a {
-	padding:30.5px 50px;
+.header-logo img {
+	height: 100px;
+	/*max-height: 100px;*/
 }
 
-ul.nav li > a{
+.navbar-collapse {
+	z-index: 1000;
+}
+
+.navbar-toggle {
+	color:#fff;
+}
+
+.navbar-brand-mini {
+	display: none;
+	width: 25%;
+
+}
+
+.navbar-brand-mini img{
+	max-height: 50px;
+	height: 50px;
+	margin-top: 15px;
+}
+
+@media screen and (min-width: 1170px) {
+	.nav > li > a {
+		padding:30px 33.5px;
+	}
+
+	ul.nav.navbar-nav {
+		margin-left: 165px;
+	}
+}
+
+ul.nav li > a:not(.sign-up){
 	color: #fff;
 	font-size: 15px;
 	transition: all .4s ease;
+}
+
+li.sign-up a:not(.btn),
+li.sign-in a:not(.lupa-password){
+	font-weight: 600;
+	font-size: 17px !important;
 }
 
 ul.nav li > a:hover, ul.nav li > a:focus, ul.nav li.active > a {
@@ -774,6 +820,10 @@ ul.social-media li > a {
 
 	.btn-submit {
 		width: 110px;
+	}
+
+	.login-instantiate {
+		margin-right: 150px;
 	}
 }
 

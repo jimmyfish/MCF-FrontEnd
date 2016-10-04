@@ -1,0 +1,19 @@
+@media screen and (max-width: 1243px) {
+	.navbar-header {
+		margin-left: 100px !important;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.navbar-brand-mini {
+		display: block;
+	}
+
+	.header-logo {
+		display: none;
+	}
+
+	li.sign-in, li.sign-up {
+		display: none;
+	}
+}
