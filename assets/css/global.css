@@ -61,7 +61,7 @@ body {
 }
 
 .header-logo img {
-    height: 100px;
+    /*    height: 100px;*/
     /*max-height: 100px;*/
 }
 
@@ -71,11 +71,19 @@ body {
 
 .navbar-toggle {
     color: #fff;
+    margin-top: 12px;
 }
 
 .navbar-brand-mini {
     display: none;
-    width: 25%;
+    width: 75px;
+    margin-left: 27%;
+}
+
+@media screen and (max-width:498px) {
+    .navbar-brand-mini {
+        margin-left: 10%;
+    }
 }
 
 .navbar-brand-mini img {
@@ -106,6 +114,13 @@ li.sign-in a:not(.lupa-password) {
     font-size: 17px !important;
 }
 
+li.sign-in a,
+li.sign-up a {
+    margin-top: -6px;
+    padding-bottom: 24px;
+    vertical-align: middle;
+}
+
 ul.nav li > a:hover,
 ul.nav li > a:focus,
 ul.nav li.active > a {
@@ -119,8 +134,8 @@ ul.nav li.active > a {
 }
 
 .header-logo {
-    background-color: #fff;
-    padding: 30px 20px;
+    /*    background-color: #fff;*/
+    /*    padding: 30px 20px;*/
     border-bottom-left-radius: 10px;
     margin-left: 150px;
     border-bottom-right-radius: 10px;
@@ -1051,8 +1066,6 @@ p.inner-desc {
 }
 
 #detail-subsektor .second-carousel .inner-content {
-    /*padding-left: 25px;
-	padding-right: 25px;*/
     margin-left: 25px;
     margin-right: 25px;
 }
