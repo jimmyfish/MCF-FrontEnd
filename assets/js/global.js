@@ -16,10 +16,6 @@ $(function () {
 
     });
 
-
-
-
-
     $('a[href*="#content-"]').click(function () {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);
@@ -32,12 +28,9 @@ $(function () {
             }
         }
     });
-
     $('.multi-item-carousel').carousel({
         interval: false
     });
-
-    $('a.navbar-brand-mini').css('margin-left', 'calc(0.25 * ' + window.innerWidth);
 
     // for every slide in carousel, copy the next slide's item in the slide.
     // Do the same for the next, next item.
