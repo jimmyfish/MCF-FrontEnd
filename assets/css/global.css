@@ -52,8 +52,8 @@ body {
     padding: 0;
 }
 
-.navbar-header {
-    margin-left: 150px !important;
+.container-fluid > .navbar-header {
+    margin-left: 150px;
 }
 
 .navbar {
@@ -99,14 +99,7 @@ body {
     margin-top: 15px;
 }
 
-@media screen and (min-width: 1170px) {
-    .nav > li > a {
-        padding: 30px 33.5px;
-    }
-    ul.nav.navbar-nav {
-        margin-left: 165px;
-    }
-}
+
 
 ul.nav li > a:not(.sign-up) {
     color: #fff;
