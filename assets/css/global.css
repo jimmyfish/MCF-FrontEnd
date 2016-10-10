@@ -111,7 +111,7 @@ ul.nav li > a:not(.sign-up) {
 li.sign-up a:not(.btn),
 li.sign-in a:not(.lupa-password) {
     font-weight: 600;
-    font-size: 17px !important;
+    font-size: 15px !important;
 }
 
 li.sign-in a:not(.lupa-password),
@@ -185,6 +185,15 @@ ul.nav li.active > a {
 }
 
 #detail-member {
+    height: auto;
+    /*height: 620px;*/
+    /*margin-top: 34px;*/
+    padding-top: 34px;
+    margin-bottom: 100px;
+    background-color: #fafafa;
+}
+
+#detail-event {
     height: auto;
     /*height: 620px;*/
     /*margin-top: 34px;*/
@@ -1210,4 +1219,35 @@ p.inner-desc {
 .program p {
 	color: #fff;
 	font-size: 1.4em;
+}
+
+/*-------------------------------------------------------------------
+                        DETAIL EVENT CSS SETTINGS
+-------------------------------------------------------------------*/
+
+#detail-event .event-date {
+    color: #28B6F6;
+    font-size: 1.7em;   
+}
+
+#detail-event .event-time, #detail-event .event-place {
+    font-size: 1.4em;
+}
+
+#detail-event p.event-time{
+    margin-bottom: 0;
+}
+
+#detail-event .event-desc {
+    font-size: 1.3em;
+    color: #666;
+}
+
+@media screen and (min-width: 1170px) {
+    .detail-event-desc {
+        margin-left: 20%;
+        font-size: 1.3em;
+        margin-bottom: 40px;
+        color: #28B6F6;
+    }
 }
