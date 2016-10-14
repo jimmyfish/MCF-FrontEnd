@@ -850,13 +850,13 @@ hr {
 }
 
 .product-grid {
-    background-color: #fff;
+    /*background-color: #fff;*/
     min-height: 240px;
     text-align:center;
 }
 
 .product-details {
-    background-color: #fff;
+    /*background-color: #fff;*/
     text-align: left;
 }
 
