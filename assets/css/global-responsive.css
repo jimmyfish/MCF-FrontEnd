@@ -1,16 +1,20 @@
-@media screen and (max-width: 1243px) {
+@media screen and (max-width: 1288px) {
 	.navbar-header {
 		margin-left: 100px;
 	}
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1288px) {
 	.navbar-brand-mini {
 		display: block;
 	}
 
 	.header-logo {
 		display: none;
+	}
+
+	.container-fluid > .navbar-header {
+		margin-left: 60px;
 	}
 }
 
@@ -21,10 +25,8 @@
     }
 }
 
-@media (min-width: 780px) and (max-width: 1120px) {
-	.container-fluid > .navbar-header {
-		margin-left: 10px;
-	}
+@media (min-width: 780px) and (max-width: 1068px) {
+	
 
 	.navbar-brand-mini, .navbar-brand {
 		display: none;
@@ -38,7 +40,22 @@
 }
 
 @media (max-width: 768px) {
+	.home-text {
+		display: block;
+	}
 
+	.home-icon {
+		display: none;
+	}
+
+	.navbar ul {
+		height: auto;
+	}
+
+	li.sign-in a:not(.lupa-password), li.sign-up a:not(.btn) {
+		padding: 10px 15px;
+		margin-top: 0;
+	}
 }
 
 @media (min-width: 780px) {
@@ -50,8 +67,12 @@
 		float: right !important;
 	}
 
-	.nav > li > a {
+	.navbar-nav > li:not(.sign-in):not(.sign-up) > a:not(.home-tabs) {
 	    padding: 30px 33.5px;
+	}
+
+	.nav > li > a.home-tabs {
+		padding:26px 20px;
 	}
 }
 
@@ -73,5 +94,56 @@
 	#myCarousel div.item div.row img {
 		margin-left: auto;
 		margin-right: auto;	
+	}
+}
+
+@media (max-width: 1200px) {
+	.comment-bottom-count {
+		width: 100%;
+	}
+}
+
+@media (max-width: 1188px) {
+	p.separator {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 1170px) {
+    .popover {
+        min-width: 340px;
+    }
+    li.sign-up .popover-content {
+        padding: 30px 20px;
+    }
+    li.sign-in .popover-content {
+        padding: 20px 20px 5px 20px;
+    }
+    .popover.bottom > .arrow {
+        margin-left: 0;
+    }
+    .btn-submit {
+        width: 110px;
+    }
+    .login-instantiate {
+        margin-right: 150px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 913px) {
+	li.sign-in a:not(.lupa-password),
+	li.sign-up a:not(.btn) {
+		padding: 30px 15px;
+		margin-top:0;
+	}
+}
+
+@media (max-width: 913px) {
+	.navbar-img {
+		display: none;
+	}
+	li.sign-in a:not(.lupa-password),
+	li.sign-up a:not(.btn) {
+		margin-top:0;
 	}
 }

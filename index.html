@@ -31,14 +31,15 @@
                 </div>
                 <div class="collapse navbar-collapse" id="main-menu">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home</a></li>
+                        <li class="active"><a href="#" class="home-tabs"><i class="icon icon-home-house-streamline icon-2x home-icon"></i><span class="home-text">home</span></a></li>
+                        <li><a href="#">mbois festival</a></li>
                         <li><a href="#">direktori</a></li>
                         <li><a href="#">kolaborasi</a></li>
                         <li>
                             <p class="separator"></p>
                         </li>
                         <li class="sign-up">
-                            <a href="#" class="trigger" data-placement="bottom" data-toggle="popover"><img src="assets/img/Icon_Register.svg"> daftar</a>
+                            <a href="#" class="trigger" data-placement="bottom" data-toggle="popover"><img src="assets/img/Icon_Register.svg" class="navbar-img"> daftar</a>
                             <!-- <a href="#" class="trigger" data-placement="bottom"><strong>daftar</strong></a> -->
                             <div class="content hide">
                                 <a href="#" title="Daftar dengan Facebook" class="btn btn-block btn-social-facebook">Daftar dengan facebook</a>
@@ -48,7 +49,7 @@
                         </li>
                         <!-- <li><a href="#"><strong>daftar</strong></a></li> -->
                         <li class="sign-in">
-                            <a href="#" class="trigger" data-placement="bottom" data-toggle="popover"><img src="assets/img/Icon_Login.svg"> masuk</a>
+                            <a href="#" class="trigger" data-placement="bottom" data-toggle="popover"><img src="assets/img/Icon_Login.svg" class="navbar-img"> masuk</a>
                             <div class="content hide login-instantiate">
                                 <form action="" method="post">
                                     <div class="form-group">
@@ -74,7 +75,7 @@
                         </li>
                     </ul>
                 </div>
-            </div>   
+            </div>
         </nav>
         <section id="content-1">
             <div class="wrapper-1">
@@ -82,7 +83,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adispiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat</p>
                 <ul class="controller">
                     <li>
-                        <a href="#" class="btn btn-primary">lihat detail</a>
+                        <a href="#" class="btn btn-purple">lihat detail</a>
                     </li>
                     <li class="controller-left">
                         <a href="#" class="controller-left"><i class="fa fa-chevron-left fa-2x"></i></a>
@@ -93,21 +94,24 @@
                 </ul>
             </div>
             <div class="container">
-                <a href="#content-2" class="center-button"><i class="fa fa-chevron-down"></i></a>
+                <center><a href="#content-2" class="center-btn"><i class="fa fa-chevron-down center-button"></i></a></center>
             </div>
         </section>
         <section id="content-2">
             <p>&nbsp;</p>
             <div class="container">
-                <p class="first-title">Acara Populer Lainnya</p>
-                <hr>
+                <div class="title-separator">
+                    <span class="first-title">
+                        Acara Populer Lainnya<!--Padding is optional-->
+                    </span>
+                </div>
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner" role="listbox">
                         <div class="item active">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <img src="assets/img/img-bekraf.png" alt="" height="340">
+                                        <img src="assets/img/img-bekraf.png" alt="" height="340" class="img-responsive">
                                     </div>
                                     <div class="col-md-1">
                                         &nbsp;
@@ -125,7 +129,7 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <img src="assets/img/img-bekraf.png" alt="" height="340">
+                                        <img src="assets/img/img-bekraf.png" alt="" height="340" class="img-responsive">
                                     </div>
                                     <div class="col-md-1">
                                         &nbsp;
@@ -143,7 +147,7 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <img src="assets/img/img-bekraf.png" alt="" height="340">
+                                        <img src="assets/img/img-bekraf.png" alt="" height="340" class="img-responsive">
                                     </div>
                                     <div class="col-md-1">
                                         &nbsp;
@@ -161,7 +165,7 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <img src="assets/img/img-bekraf.png" alt="" height="340">
+                                        <img src="assets/img/img-bekraf.png" alt="" height="340" class="img-responsive">
                                     </div>
                                     <div class="col-md-1">
                                         &nbsp;
@@ -186,8 +190,11 @@
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
-                <p class="first-title">Acara Popular Lainnya</p>
-                <hr>
+                <div class="title-separator">
+                    <span class="first-title">
+                        Acara Populer Lainnya<!--Padding is optional-->
+                    </span>
+                </div>
                 <p>&nbsp;</p>
                 <p>&nbsp;</p>
                 <p>&nbsp;</p>
@@ -347,8 +354,11 @@
         <section id="content-3">
             <p>&nbsp;</p>
             <div class="container">
-                <p class="first-title">Forum Kolaborasi</p>
-                <hr>
+                <div class="title-separator">
+                    <span class="first-title">
+                        Forum Kolaborasi<!--Padding is optional-->
+                    </span>
+                </div>
                 <p>&nbsp;</p>
                 <p>&nbsp;</p>
                 <p>&nbsp;</p>
@@ -360,423 +370,434 @@
                             <h3 class="comment-content">Membutuhkan bantuan untuk event seni pertunjukan di Malang kota bulan November 2016</h3>
                             <h4 class="comment-hint">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fringilla sem vel facilisis fringilla. Sed quis turpis quis ipsum pretium dapibus ut id mi. Aliquam erat volutpat. Quisque eget sollicitudin massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a tempor sapien.</h4>
                             <div class="comment-bottom">
-                                <a href="#" class="btn btn-purple">Lihat selengkapnya</a>
-                                <span class="comment-bottom-count">
-                                    <i class="fa fa-comments fa-2x"></i>
-                                    <span>24 Komentar</span>
-                                </span>
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <a href="#" class="btn btn-purple">Lihat selengkapnya</a>
+                                        
+                                    </span>
+                                </div>
+                                <div class="col-xs-6">
+                                    <p class="comment-bottom-count">
+                                        <i class="fa fa-comments fa-2x"></i>
+                                        <span>24 Komentar</span>
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-1">
+                    </div>
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="comment-colaboration">
+                            <h3 class="colaboration-text">Membutuhkan animator untuk Malang Creative Week</h3>
+                            <h4 class="colaborator">Oleh : John Smith</h3>
                         </div>
-                        <div class="col-md-6">
-                            <div class="comment-colaboration">
-                                <h3 class="colaboration-text">Membutuhkan animator untuk Malang Creative Week</h3>
-                                <h4 class="colaborator">Oleh : John Smith</h3>
-                            </div>
-                            <div class="comment-colaboration">
-                                <h3 class="colaboration-text">Temen-temen subsektor fotografi mohon infonya untuk model foto baju</h3>
-                                <h4 class="colaborator">Oleh : John Smith</h3>
-                                
-                            </div>
-                            <div class="comment-colaboration">
-                                <h3 class="colaboration-text">Volunteer untuk event bekraf bulan depan di Gajayana</h3>
-                                <h4 class="colaborator">Oleh : John Smith</h3>
-                                
-                            </div>
-                            <div class="btn-colaboration">
-                                <a href="#" class="btn btn-purple">Lihat kolaborasi lainnya</a>
-                            </div>
+                        <div class="comment-colaboration">
+                            <h3 class="colaboration-text">Temen-temen subsektor fotografi mohon infonya untuk model foto baju</h3>
+                            <h4 class="colaborator">Oleh : John Smith</h3>
+                            
+                        </div>
+                        <div class="comment-colaboration">
+                            <h3 class="colaboration-text">Volunteer untuk event bekraf bulan depan di Gajayana</h3>
+                            <h4 class="colaborator">Oleh : John Smith</h3>
+                            
+                        </div>
+                        <div class="btn-colaboration">
+                            <a href="#" class="btn btn-purple">Lihat kolaborasi lainnya</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="content-4">
-            <p>&nbsp;</p>
-            <div class="container">
-                <p class="first-title">Produk Unggulan</p>
-                <hr>
-                <div class="content-product">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="product-grid">
-                                <div class="hovereffect">
-                                    <img class="img-responsive" src="assets/img/product/product-1.jpg" alt="">
-                                    <div class="overlay">
-                                        <p>
-                                            <a href="#">LIHAT DETAIL</a>
-                                        </p>
-                                    </div>
-                                    <div class="product-details">
-                                        <h4 class="product-title">
-                                        Some Title show here
-                                        </h4>
-                                        <h4 class="product-subtitle">
-                                        Some description
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="product-grid">
-                                <div class="hovereffect">
-                                    <img class="img-responsive" src="assets/img/product/product-2.jpg" alt="">
-                                    <div class="overlay">
-                                        <p>
-                                            <a href="#">LIHAT DETAIL</a>
-                                        </p>
-                                    </div>
-                                    <div class="product-details">
-                                        <h4 class="product-title">
-                                        Some Title show here
-                                        </h4>
-                                        <h4 class="product-subtitle">
-                                        Some description
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="product-grid">
-                                <div class="hovereffect">
-                                    <img class="img-responsive" src="assets/img/product/product-3.jpg" alt="">
-                                    <div class="overlay">
-                                        <p>
-                                            <a href="#">LIHAT DETAIL</a>
-                                        </p>
-                                    </div>
-                                    <div class="product-details">
-                                        <h4 class="product-title">
-                                        Some Title show here
-                                        </h4>
-                                        <h4 class="product-subtitle">
-                                        Some description
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="product-grid">
-                                <div class="hovereffect">
-                                    <img class="img-responsive" src="assets/img/product/product-4.jpg" alt="">
-                                    <div class="overlay">
-                                        <p>
-                                            <a href="#">LIHAT DETAIL</a>
-                                        </p>
-                                    </div>
-                                    <div class="product-details">
-                                        <h4 class="product-title">
-                                        Some Title show here
-                                        </h4>
-                                        <h4 class="product-subtitle">
-                                        Some description
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="product-grid">
-                                <div class="hovereffect">
-                                    <img class="img-responsive" src="assets/img/product/product-1.jpg" alt="">
-                                    <div class="overlay">
-                                        <p>
-                                            <a href="#">LIHAT DETAIL</a>
-                                        </p>
-                                    </div>
-                                    <div class="product-details">
-                                        <h4 class="product-title">
-                                        Some Title show here
-                                        </h4>
-                                        <h4 class="product-subtitle">
-                                        Some description
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="product-grid">
-                                <div class="hovereffect">
-                                    <img class="img-responsive" src="assets/img/product/product-2.jpg" alt="">
-                                    <div class="overlay">
-                                        <p>
-                                            <a href="#">LIHAT DETAIL</a>
-                                        </p>
-                                    </div>
-                                    <div class="product-details">
-                                        <h4 class="product-title">
-                                        Some Title show here
-                                        </h4>
-                                        <h4 class="product-subtitle">
-                                        Some description
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="product-grid">
-                                <div class="hovereffect">
-                                    <img class="img-responsive" src="assets/img/product/product-3.jpg" alt="">
-                                    <div class="overlay">
-                                        <p>
-                                            <a href="#">LIHAT DETAIL</a>
-                                        </p>
-                                    </div>
-                                    <div class="product-details">
-                                        <h4 class="product-title">
-                                        Some Title show here
-                                        </h4>
-                                        <h4 class="product-subtitle">
-                                        Some description
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="product-grid">
-                                <div class="hovereffect">
-                                    <img class="img-responsive" src="assets/img/product/product-4.jpg" alt="">
-                                    <div class="overlay">
-                                        <p>
-                                            <a href="#">LIHAT DETAIL</a>
-                                        </p>
-                                    </div>
-                                    <div class="product-details">
-                                        <h4 class="product-title">
-                                        Some Title show here
-                                        </h4>
-                                        <h4 class="product-subtitle">
-                                        Some description
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="product-grid">
-                                <div class="hovereffect">
-                                    <img class="img-responsive" src="assets/img/product/product-1.jpg" alt="">
-                                    <div class="overlay">
-                                        <p>
-                                            <a href="#">LIHAT DETAIL</a>
-                                        </p>
-                                    </div>
-                                    <div class="product-details">
-                                        <h4 class="product-title">
-                                        Some Title show here
-                                        </h4>
-                                        <h4 class="product-subtitle">
-                                        Some description
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="product-grid">
-                                <div class="hovereffect">
-                                    <img class="img-responsive" src="assets/img/product/product-2.jpg" alt="">
-                                    <div class="overlay">
-                                        <p>
-                                            <a href="#">LIHAT DETAIL</a>
-                                        </p>
-                                    </div>
-                                    <div class="product-details">
-                                        <h4 class="product-title">
-                                        Some Title show here
-                                        </h4>
-                                        <h4 class="product-subtitle">
-                                        Some description
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="product-grid">
-                                <div class="hovereffect">
-                                    <img class="img-responsive" src="assets/img/product/product-3.jpg" alt="">
-                                    <div class="overlay">
-                                        <p>
-                                            <a href="#">LIHAT DETAIL</a>
-                                        </p>
-                                    </div>
-                                    <div class="product-details">
-                                        <h4 class="product-title">
-                                        Some Title show here
-                                        </h4>
-                                        <h4 class="product-subtitle">
-                                        Some description
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="product-grid">
-                                <div class="hovereffect">
-                                    <img class="img-responsive" src="assets/img/product/product-4.jpg" alt="">
-                                    <div class="overlay">
-                                        <p>
-                                            <a href="#">LIHAT DETAIL</a>
-                                        </p>
-                                    </div>
-                                    <div class="product-details">
-                                        <h4 class="product-title">
-                                        Some Title show here
-                                        </h4>
-                                        <h4 class="product-subtitle">
-                                        Some description
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="product-grid">
-                                <div class="hovereffect">
-                                    <img class="img-responsive" src="assets/img/product/product-1.jpg" alt="">
-                                    <div class="overlay">
-                                        <p>
-                                            <a href="#">LIHAT DETAIL</a>
-                                        </p>
-                                    </div>
-                                    <div class="product-details">
-                                        <h4 class="product-title">
-                                        Some Title show here
-                                        </h4>
-                                        <h4 class="product-subtitle">
-                                        Some description
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="product-grid">
-                                <div class="hovereffect">
-                                    <img class="img-responsive" src="assets/img/product/product-2.jpg" alt="">
-                                    <div class="overlay">
-                                        <p>
-                                            <a href="#">LIHAT DETAIL</a>
-                                        </p>
-                                    </div>
-                                    <div class="product-details">
-                                        <h4 class="product-title">
-                                        Some Title show here
-                                        </h4>
-                                        <h4 class="product-subtitle">
-                                        Some description
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="product-grid">
-                                <div class="hovereffect">
-                                    <img class="img-responsive" src="assets/img/product/product-3.jpg" alt="">
-                                    <div class="overlay">
-                                        <p>
-                                            <a href="#">LIHAT DETAIL</a>
-                                        </p>
-                                    </div>
-                                    <div class="product-details">
-                                        <h4 class="product-title">
-                                        Some Title show here
-                                        </h4>
-                                        <h4 class="product-subtitle">
-                                        Some description
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="product-grid">
-                                <div class="hovereffect">
-                                    <img class="img-responsive" src="assets/img/product/product-4.jpg" alt="">
-                                    <div class="overlay">
-                                        <p>
-                                            <a href="#">LIHAT DETAIL</a>
-                                        </p>
-                                    </div>
-                                    <div class="product-details">
-                                        <h4 class="product-title">
-                                        Some Title show here
-                                        </h4>
-                                        <h4 class="product-subtitle">
-                                        Some description
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <p>&nbsp;</p>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="product-button">
-                                <a href="#" class="btn btn-purple btn-block">Semua subsektor industri kreatif</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        </div>
+    </section>
+    <section id="content-4">
+        <p>&nbsp;</p>
+        <div class="container">
+            <div class="title-separator">
+                <span class="first-title">
+                    Produk Unggulan<!--Padding is optional-->
+                </span>
             </div>
-        </section>
-        <section id="content-about">
-            <div class="container">
+            <div class="content-product">
                 <div class="row">
-                    <div class="col-md-2">
-                        <img src="assets/img/mcf-logo-white.png" alt="MCF Logo" width="105">
+                    <div class="col-md-3">
+                        <div class="product-grid">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="assets/img/product/product-1.jpg" alt="">
+                                <div class="overlay">
+                                    <p>
+                                        <a href="#">LIHAT DETAIL</a>
+                                    </p>
+                                </div>
+                                <div class="product-details">
+                                    <h4 class="product-title">
+                                    Some Title show here
+                                    </h4>
+                                    <h4 class="product-subtitle">
+                                    Some description
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-2">
-                        <ul class="about-1">
-                            <li><a href="#">Tentang MCF</a></li>
-                            <!-- <li>Tentang MCF</li> -->
-                            <li><a href="#">Visi</a></li>
-                            <li><a href="#">Misi</a></li>
-                            <li><a href="#">Tujuan</a></li>
-                            <li><a href="#">Program</a></li>
-                        </ul>
+                    <div class="col-md-3">
+                        <div class="product-grid">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="assets/img/product/product-2.jpg" alt="">
+                                <div class="overlay">
+                                    <p>
+                                        <a href="#">LIHAT DETAIL</a>
+                                    </p>
+                                </div>
+                                <div class="product-details">
+                                    <h4 class="product-title">
+                                    Some Title show here
+                                    </h4>
+                                    <h4 class="product-subtitle">
+                                    Some description
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-4">
-                        <ul class="about-2">
-                            <li><a href="#">Direktori Industri Kreatif Kota Malang</a></li>
-                            <li><a href="#">Subsektor Industri Kreatif</a></li>
-                            <li><a href="#">Galery</a></li>
-                            <li><a href="#">Event</a></li>
-                            <li><a href="#">Forum Kolaborasi</a></li>
-                        </ul>
+                    <div class="col-md-3">
+                        <div class="product-grid">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="assets/img/product/product-3.jpg" alt="">
+                                <div class="overlay">
+                                    <p>
+                                        <a href="#">LIHAT DETAIL</a>
+                                    </p>
+                                </div>
+                                <div class="product-details">
+                                    <h4 class="product-title">
+                                    Some Title show here
+                                    </h4>
+                                    <h4 class="product-subtitle">
+                                    Some description
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-4">
-                        <ul class="social-media">
-                            <li><a href="#" class="btn-social"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#" class="btn-social"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#" class="btn-social"><i class="fa fa-envelope"></i></a></li>
-                        </ul>
+                    <div class="col-md-3">
+                        <div class="product-grid">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="assets/img/product/product-4.jpg" alt="">
+                                <div class="overlay">
+                                    <p>
+                                        <a href="#">LIHAT DETAIL</a>
+                                    </p>
+                                </div>
+                                <div class="product-details">
+                                    <h4 class="product-title">
+                                    Some Title show here
+                                    </h4>
+                                    <h4 class="product-subtitle">
+                                    Some description
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="product-grid">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="assets/img/product/product-1.jpg" alt="">
+                                <div class="overlay">
+                                    <p>
+                                        <a href="#">LIHAT DETAIL</a>
+                                    </p>
+                                </div>
+                                <div class="product-details">
+                                    <h4 class="product-title">
+                                    Some Title show here
+                                    </h4>
+                                    <h4 class="product-subtitle">
+                                    Some description
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product-grid">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="assets/img/product/product-2.jpg" alt="">
+                                <div class="overlay">
+                                    <p>
+                                        <a href="#">LIHAT DETAIL</a>
+                                    </p>
+                                </div>
+                                <div class="product-details">
+                                    <h4 class="product-title">
+                                    Some Title show here
+                                    </h4>
+                                    <h4 class="product-subtitle">
+                                    Some description
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product-grid">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="assets/img/product/product-3.jpg" alt="">
+                                <div class="overlay">
+                                    <p>
+                                        <a href="#">LIHAT DETAIL</a>
+                                    </p>
+                                </div>
+                                <div class="product-details">
+                                    <h4 class="product-title">
+                                    Some Title show here
+                                    </h4>
+                                    <h4 class="product-subtitle">
+                                    Some description
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product-grid">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="assets/img/product/product-4.jpg" alt="">
+                                <div class="overlay">
+                                    <p>
+                                        <a href="#">LIHAT DETAIL</a>
+                                    </p>
+                                </div>
+                                <div class="product-details">
+                                    <h4 class="product-title">
+                                    Some Title show here
+                                    </h4>
+                                    <h4 class="product-subtitle">
+                                    Some description
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="product-grid">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="assets/img/product/product-1.jpg" alt="">
+                                <div class="overlay">
+                                    <p>
+                                        <a href="#">LIHAT DETAIL</a>
+                                    </p>
+                                </div>
+                                <div class="product-details">
+                                    <h4 class="product-title">
+                                    Some Title show here
+                                    </h4>
+                                    <h4 class="product-subtitle">
+                                    Some description
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product-grid">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="assets/img/product/product-2.jpg" alt="">
+                                <div class="overlay">
+                                    <p>
+                                        <a href="#">LIHAT DETAIL</a>
+                                    </p>
+                                </div>
+                                <div class="product-details">
+                                    <h4 class="product-title">
+                                    Some Title show here
+                                    </h4>
+                                    <h4 class="product-subtitle">
+                                    Some description
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product-grid">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="assets/img/product/product-3.jpg" alt="">
+                                <div class="overlay">
+                                    <p>
+                                        <a href="#">LIHAT DETAIL</a>
+                                    </p>
+                                </div>
+                                <div class="product-details">
+                                    <h4 class="product-title">
+                                    Some Title show here
+                                    </h4>
+                                    <h4 class="product-subtitle">
+                                    Some description
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product-grid">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="assets/img/product/product-4.jpg" alt="">
+                                <div class="overlay">
+                                    <p>
+                                        <a href="#">LIHAT DETAIL</a>
+                                    </p>
+                                </div>
+                                <div class="product-details">
+                                    <h4 class="product-title">
+                                    Some Title show here
+                                    </h4>
+                                    <h4 class="product-subtitle">
+                                    Some description
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="product-grid">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="assets/img/product/product-1.jpg" alt="">
+                                <div class="overlay">
+                                    <p>
+                                        <a href="#">LIHAT DETAIL</a>
+                                    </p>
+                                </div>
+                                <div class="product-details">
+                                    <h4 class="product-title">
+                                    Some Title show here
+                                    </h4>
+                                    <h4 class="product-subtitle">
+                                    Some description
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product-grid">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="assets/img/product/product-2.jpg" alt="">
+                                <div class="overlay">
+                                    <p>
+                                        <a href="#">LIHAT DETAIL</a>
+                                    </p>
+                                </div>
+                                <div class="product-details">
+                                    <h4 class="product-title">
+                                    Some Title show here
+                                    </h4>
+                                    <h4 class="product-subtitle">
+                                    Some description
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product-grid">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="assets/img/product/product-3.jpg" alt="">
+                                <div class="overlay">
+                                    <p>
+                                        <a href="#">LIHAT DETAIL</a>
+                                    </p>
+                                </div>
+                                <div class="product-details">
+                                    <h4 class="product-title">
+                                    Some Title show here
+                                    </h4>
+                                    <h4 class="product-subtitle">
+                                    Some description
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product-grid">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="assets/img/product/product-4.jpg" alt="">
+                                <div class="overlay">
+                                    <p>
+                                        <a href="#">LIHAT DETAIL</a>
+                                    </p>
+                                </div>
+                                <div class="product-details">
+                                    <h4 class="product-title">
+                                    Some Title show here
+                                    </h4>
+                                    <h4 class="product-subtitle">
+                                    Some description
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>&nbsp;</p>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="product-button">
+                            <a href="#" class="btn btn-purple btn-block">Semua subsektor industri kreatif</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="license">
-            <h3>&copy; MCF - Malang Creative Fusion. All rights reserved.</h3>
-        </section>
-        <script type=text/javascript src="assets/js/jquery-3.1.1.min.js"></script>
-        <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="assets/js/global.js"></script>
-    </body>
+        </div>
+    </section>
+    <section id="content-about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <img src="assets/img/mcf-logo-white.png" alt="MCF Logo" width="105">
+                </div>
+                <div class="col-md-2">
+                    <ul class="about-1">
+                        <li><a href="#">Tentang MCF</a></li>
+                        <!-- <li>Tentang MCF</li> -->
+                        <li><a href="#">Visi</a></li>
+                        <li><a href="#">Misi</a></li>
+                        <li><a href="#">Tujuan</a></li>
+                        <li><a href="#">Program</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="about-2">
+                        <li><a href="#">Direktori Industri Kreatif Kota Malang</a></li>
+                        <li><a href="#">Subsektor Industri Kreatif</a></li>
+                        <li><a href="#">Galery</a></li>
+                        <li><a href="#">Event</a></li>
+                        <li><a href="#">Forum Kolaborasi</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="social-media">
+                        <li><a href="#" class="btn-social"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" class="btn-social"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" class="btn-social"><i class="fa fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="license">
+        <h3>&copy; MCF - Malang Creative Fusion. All rights reserved.</h3>
+    </section>
+    <script type=text/javascript src="assets/js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/js/global.js"></script>
+</body>
 </html>
