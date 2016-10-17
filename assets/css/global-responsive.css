@@ -157,4 +157,15 @@
 	.product-details {
 		text-align: center;
 	}
+    
+    #form-mcf .detail-member-desc {
+        text-align: center;
+        font-size: 2em;
+    }
+    
+    #form-mcf .btn-purple {
+        width:100%;
+        height: 40px;
+        border-radius: 2px;
+    }
 }
