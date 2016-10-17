@@ -1,3 +1,41 @@
+.label-img {
+	display: inline-block;
+	padding: 15px 0 0;
+	cursor: pointer;
+	z-index: 1000;
+	top: -70px;
+	position: relative;
+	width: 250px;
+	height: 70px;
+	background-color: rgba(0,0,0,.5);
+	color: #fff;
+	text-align: center;
+	transition: all .4s ease;
+}
+
+.label-img:hover {
+	background-color: rgba(0,0,0,.2);
+	transition: all .4s ease;
+}
+
+#form-mcf img {
+	position: relative;
+}
+
+input[type="file"] {
+	display: none;
+}
+
+#form-mcf input[type="text"],
+#form-mcf input[type="email"] {
+	height: 40px;
+	font-size: 1.2em;
+}
+
+#form-mcf input[type="radio"] {
+	vertical-align: middle;
+}
+
 .btn-flat {
 	border-radius: 0;
 }
@@ -26,18 +64,11 @@ span.btn-desc {
 }
 
 #form-mcf {
-	margin-top: 20px;
+	padding-top: 20px;
 	height: 600px;
 	/* height: auto; */
 	margin-bottom: 100px;
-}
-
-#form-mcf input[type="file"] {
-	position: relative;
-}
-
-#form-mcf img {
-	position: absolute;
+	background-color: #fafafa;
 }
 
 #form-mcf .radio-1 {
