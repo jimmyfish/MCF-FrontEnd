@@ -70,4 +70,34 @@ $(function () {
             }
         });
     });
+
+    $('input[type=text]').on('change invalid', function () {
+        var txtField = $(this).get(0);
+
+        txtField.setCustomValidity('');
+
+        if (!txtField.validity.valid) {
+            txtField.setCustomValidity('Wajib Diisi');
+            $('.form-control[required]').css('border', '1px solid #e74c3c');
+            $('.form-control[required]').addClass('not-valid');
+        }
+    });
+
+
 }); // END OF FUNCTION JQUERY
+
+function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+                        $('#img-thumb')
+                            .attr('src', e.target.result)
+                            .width(250)
+                            .height(250);
+//            console.log(e.target.result);
+        };
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}

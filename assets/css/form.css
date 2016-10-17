@@ -1,49 +1,165 @@
-.btn-flat {
-	border-radius: 0;
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    padding: 10px;
 }
 
-.btn-form {
-	height: 100px;
-	width: 250px;
-	vertical-align: middle;
-	/*font-size: 1.5em;*/
+.label-img {
+    display: inline-block;
+    padding: 5px 0 0;
+    cursor: pointer;
+    z-index: 1000;
+    top: -70px;
+    position: relative;
+    width: 250px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+    text-align: center;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    font-weight: 300;
 }
 
-.frm-button {
-	/*text-align: center;*/
+.label-img small {
+    color: #aaaaaa;
 }
 
-#form-mcf span.fa {
-	float: left;
-	position: relative;
+.cd-select {
+    position: relative;
 }
 
-span.btn-desc {
-	text-transform: uppercase;
-	vertical-align: middle;
-	/*float: right;*/
-	text-align: center;
+.cd-select:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    right: 16px;
+    top: 50%;
+    margin-top: -8px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("../img/cd-icon-arrow.svg") no-repeat center center;
+    pointer-events: none;
 }
 
-#form-mcf {
-	margin-top: 20px;
-	height: 600px;
-	/* height: auto; */
-	margin-bottom: 100px;
-}
-
-#form-mcf input[type="file"] {
-	position: relative;
+input[type="file"] {
+    display: none;
 }
 
 #form-mcf img {
-	position: absolute;
+    background-position: center center;
 }
 
-#form-mcf .radio-1 {
-	display: inline-block;
-	float: left;
+.label-img:hover {
+    background-color: rgba(0, 0, 0, .2);
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
 }
+
+#form-mcf img {
+    position: relative;
+}
+
+#form-mcf input[type="text"],
+#form-mcf input[type="email"] {
+    height: 40px;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+#form-mcf input[type="text"].form-control,
+#form-mcf input[type="email"].form-control {
+    border-radius: 0;
+}
+
+#form-mcf select.form-control {
+    height: 40px;
+    border-radius: 0;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.not-valid {
+    background: url("../img/cd-required.svg") no-repeat top right;
+}
+
+#form-mcf input[type="radio"] {
+    vertical-align: middle;
+}
+
+#form-mcf span.fa {
+    float: left;
+    position: relative;
+}
+
+#form-mcf {
+    padding-top: 20px;
+/*    height: 600px;*/
+     height: auto; 
+    margin-bottom: 100px;
+    background-color: #fafafa;
+}
+
+.radio-inline:first-child {
+    margin-left: 20px;
+}
+
+label.radio-inline {
+    height: 40px;
+    font-size: 1.2em;
+}
+
+label.radio-inline span {
+    margin-left: 10px;
+}
+
+.btn-flat {
+    border-radius: 0;
+}
+
+.btn-form {
+    height: 100px;
+    width: 250px;
+    vertical-align: middle;
+    /*font-size: 1.5em;*/
+}
+
+.frm-button {
+    /*text-align: center;*/
+}
+
+span.btn-desc {
+    text-transform: uppercase;
+    vertical-align: middle;
+    /*float: right;*/
+    text-align: center;
+}
+
+.lblUpload {
+    background-color: #3498db;
+    padding:30px;
+    width: 49.6%;
+    cursor: pointer;
+    color: #fff;
+/*    font-size: 1.2em;*/
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.lblUpload p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.lblUpload span.fa {
+    float: left;
+}
+
+
+/*--------------------------------------------------*/
 
 @media screen and (min-width: 1170px) {
     #form-mcf .detail-member-desc {

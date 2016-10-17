@@ -41,16 +41,39 @@
                     <li>
                         <p class="separator"></p>
                     </li>
-                    <li class="allready-login">
-                        <a href="#" class="trigger" data-placement="bottom" data-toggle="popover">
-                        John D. 
-                        <img src="../assets/img/comment-profile/john.jpg" class="navbar-avatar" height="45">
-                        </a>
+                    <li class="sign-up">
+                        <a href="#" class="trigger" data-placement="bottom" data-toggle="popover"><img src="../assets/img/Icon_Register.svg" class="navbar-img"> daftar</a>
                         <!-- <a href="#" class="trigger" data-placement="bottom"><strong>daftar</strong></a> -->
                         <div class="content hide">
                             <a href="#" title="Daftar dengan Facebook" class="btn btn-block btn-social-facebook">Daftar dengan facebook</a>
                             <p>Atau</p>
                             <a href="#" title="Google Form" class="btn btn-block btn-social-google-form">Google Form</a>
+                        </div>
+                    </li>
+                    <!-- <li><a href="#"><strong>daftar</strong></a></li> -->
+                    <li class="sign-in">
+                        <a href="#" class="trigger" data-placement="bottom" data-toggle="popover"><img src="../assets/img/Icon_Login.svg" class="navbar-img"> masuk</a>
+                        <div class="content hide login-instantiate">
+                            <form action="" method="post">
+                                <div class="form-group">
+                                    <input type="text" name="email" placeholder="E-mail/Username" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" name="password" placeholder="Password" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <input type="submit" name="submit-login" value="masuk" class="btn btn-primary form-control btn-submit">
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <span class="pull-right forgot-password">
+													<a href="#" class="lupa-password">Lupa Kata Sandi ?</a>
+												</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </li>
                 </ul>
@@ -82,75 +105,35 @@
                     </div>
                     <div class="col-md-7">
                         <div class="form-group">
-                            <input type="text" name="" class="form-control" placeholder="Nama Komunitas" required>
-                        </div>
-                        <!-- <div class="form-control">
-											
-							</div> -->
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label class="radio-inline">
-                                    <input type="radio" name="group1" value="" checked>
-                                    <span>Organisasi / Komunitas</span>
-                                </label>
-                            </div>
-                            <div class="col-md-6">
-                                <label class="radio-inline">
-                                    <input type="radio" name="group1" value="">
-                                    <span>Personal</span>
-                                </label>
-
-                            </div>
+                            <input name="establish" type="text" class="form-control" placeholder="Didirikan Sejak">
                         </div>
                         <div class="form-group">
-                            <p class="cd-select">
-                                <select name="" class="form-control">
-                                    <option>- Select Category -</option>
-                                    <option value="">Option 1</option>
-                                    <option value="">Option 2</option>
-                                    <option value="">Option 3</option>
-                                </select>
-                            </p>
-
+                            <input name="owner" type="text" class="form-control" placeholder="Pendiri/Owner">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Telepon">
+                            <input name="employee_count" type="text" class="form-control" placeholder="Jumlah Pegawai">
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Email">
+                            <input name="vendortype" type="text" class="form-control" placeholder="Jenis Usaha">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Link Facebook">
+                            <input name="modal" type="text" class="form-control" placeholder="Modal">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Alamat">
-                        </div>
-                        <div class="form-group frm-button">
-                            <label for="upload-image" class="lblUpload">
-                                <input id="upload-image" type="file" accept="image/jpeg, image/png, image/gif">
-                                <span class="fa fa-file-picture-o fa-3x"></span>
-
-                                <p>Upload Gambar</p>
-                            </label>
-                            <label for="upload-video" class="lblUpload">
-                                <input id="upload-video" type="file" accept="video/x-mpeg2, video/msvideo">
-                                <span class="fa fa-file-video-o fa-3x"></span>
-
-                                <p>Upload Video</p>
-                            </label>
-                            <!--
-                            <button type="button" class="btn btn-primary btn-flat btn-form">
-                                <span class="fa fa-file-picture-o fa-3x"></span>
-                                <span class="btn-desc">unggah foto</span>
-                            </button>
-                            <button type="button" class="btn btn-primary btn-flat btn-form">
-                                <span class="fa fa-file-video-o fa-3x"></span>
-                                <span class="btn-desc">unggah video</span>
-                            </button>
--->
+                            <input name="data" type="text" class="form-control" placeholder="Pendataan">
                         </div>
                         <div class="form-group">
-                            <input type="submit" class="btn btn-purple" value="daftar">
+                            <input name="market" type="text" class="form-control" placeholder="Target Pemasaran">
+                        </div>
+                        <div class="form-group">
+                            <input name="location" type="text" class="form-control" placeholder="Lokasi">
+                        </div>
+                        <div class="form-group">
+                            <input name="website" type="text" class="form-control" placeholder="Website">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-purple" value="simpan perubahan">
+                            <a href="#" class="btn btn-grey pull-right"> lewati</a>
                         </div>
                     </div>
                     <div class="col-md-1">
