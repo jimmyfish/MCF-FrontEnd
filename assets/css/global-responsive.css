@@ -67,7 +67,7 @@
 		float: right !important;
 	}
 
-	.navbar-nav > li:not(.sign-in):not(.sign-up) > a:not(.home-tabs) {
+	.navbar-nav > li:not(.sign-in):not(.sign-up):not(.allready-login) > a:not(.home-tabs) {
 	    padding: 30px 33.5px;
 	}
 

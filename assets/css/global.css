@@ -116,6 +116,17 @@ body {
     margin-top: 15px;
 }
 
+.allready-login {
+    padding-top: 3px;
+/*    margin-top: 0;*/
+}
+
+.navbar-avatar {
+    margin-left: 15px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+
 
 
 ul.nav li > a {
@@ -665,6 +676,25 @@ hr {
     -webkit-transition: all .7s ease;
     transition: all .7s ease;
     color: #fff;
+}
+
+.btn-grey {
+    background-color: #95a5a6;
+    color: #fafafa;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 3px;
+    padding:5px 20px;
+    font-size: 16px;
+}
+
+.btn-grey:hover {
+    background-color: #bdc3c7;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    color: #000;
 }
 
 
