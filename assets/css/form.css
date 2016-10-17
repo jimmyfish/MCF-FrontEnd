@@ -1,3 +1,30 @@
+.btn-flat {
+	border-radius: 0;
+}
+
+.btn-form {
+	height: 100px;
+	width: 250px;
+	vertical-align: middle;
+	/*font-size: 1.5em;*/
+}
+
+.frm-button {
+	/*text-align: center;*/
+}
+
+#form-mcf span.fa {
+	float: left;
+	position: relative;
+}
+
+span.btn-desc {
+	text-transform: uppercase;
+	vertical-align: middle;
+	/*float: right;*/
+	text-align: center;
+}
+
 #form-mcf {
 	margin-top: 20px;
 	height: 600px;
@@ -7,6 +34,15 @@
 
 #form-mcf input[type="file"] {
 	position: relative;
+}
+
+#form-mcf img {
+	position: absolute;
+}
+
+#form-mcf .radio-1 {
+	display: inline-block;
+	float: left;
 }
 
 @media screen and (min-width: 1170px) {
