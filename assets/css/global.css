@@ -22,7 +22,7 @@
 
 @font-face {
     font-family: "Museo Sans";
-    src:url('../fonts/museosansrounded-300-webfont.ttf') format('truetype');
+    src: url('../fonts/museosansrounded-300-webfont.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
@@ -37,7 +37,7 @@ a:hover {
 }
 
 .navbar-nav .icon-2x {
-    /*padding: 15px;*/          
+    /*padding: 15px;*/
 }
 
 .navbar-nav li {
@@ -50,8 +50,9 @@ a:hover {
 }
 
 .home-btn {
-    padding:25px 33.5px;
+    padding: 25px 33.5px;
 }
+
 .navbar {
     border: 0;
 }
@@ -118,7 +119,7 @@ body {
 
 .allready-login {
     padding-top: 3px;
-/*    margin-top: 0;*/
+    /*    margin-top: 0;*/
 }
 
 .navbar-avatar {
@@ -126,8 +127,6 @@ body {
     border: 3px solid #fff;
     border-radius: 50%;
 }
-
-
 
 ul.nav li > a {
     color: #fff;
@@ -145,7 +144,7 @@ li.sign-in a:not(.lupa-password) {
 li.sign-in a:not(.lupa-password),
 li.sign-up a:not(.btn) {
     margin-top: -12px;
-    padding:36px 33.5px 24px;
+    padding: 36px 33.5px 24px;
     vertical-align: middle;
 }
 
@@ -240,9 +239,17 @@ ul.nav li.active > a {
 
 #detail-subsektor {
     background-color: #fafafa;
-    height: 1000px;
-    /*height: auto;*/
+    /*    height: 1000px;*/
+    height: auto;
     padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+#forum-kolaborasi {
+    background-color: #fafafa;
+    height: auto;
+    /*    height: 2000px;*/
+    padding-top: 100px;
     padding-bottom: 150px;
 }
 
@@ -258,17 +265,25 @@ ul.nav li.active > a {
 }
 
 #tentang-mcf-2 {
-	background-color: #f8931f;
-	height: auto;
-	padding-bottom: 120px;
-	padding-top: 90px;
+    background-color: #f8931f;
+    height: auto;
+    padding-bottom: 120px;
+    padding-top: 90px;
 }
 
 #tentang-mcf-3 {
-	background-color: #424242;
-	height: auto;
-	padding-top: 110px;
-	padding-bottom: 180px;
+    background-color: #424242;
+    height: auto;
+    padding-top: 110px;
+    padding-bottom: 180px;
+}
+
+#list-forum {
+    /*    height: auto;*/
+    height: 1000px;
+    padding-top: 30px;
+    padding-bottom: 180px;
+    background-color: #fafafa;
 }
 
 
@@ -391,7 +406,7 @@ ul.controller > li > a.btn:hover {
     font-size: 20px;
     border-radius: 100%;
     background-color: rgba(255, 255, 255, .5);
-        margin-left: -26px;
+    margin-left: -26px;
     position: absolute;
     margin-top: -90px;
 }
@@ -686,7 +701,7 @@ hr {
     font-weight: 600;
     text-transform: uppercase;
     border-radius: 3px;
-    padding:5px 20px;
+    padding: 5px 20px;
     font-size: 16px;
 }
 
@@ -882,7 +897,7 @@ hr {
 .product-grid {
     /*background-color: #fff;*/
     min-height: 240px;
-    text-align:center;
+    text-align: center;
 }
 
 .product-details {
@@ -1180,87 +1195,88 @@ p.inner-desc {
     font-weight: 400;
 }
 
+
 /*TENTANG MCF PAGE SETTING*/
 
 @media screen and (min-width: 1170px) {
-	#tentang-mcf-1 p {
-		margin-left: 50px;
-	}
-
-	#tentang-mcf-2 .container {
-		padding-left: 50px;
-	}
+    #tentang-mcf-1 p {
+        margin-left: 50px;
+    }
+    #tentang-mcf-2 .container {
+        padding-left: 50px;
+    }
 }
 
-#tentang-mcf-1 h1{
-	font-size: 3.7em;
-	color: #fff;
-	margin-left: 50px;
-	font-weight: 300;
-	margin-bottom: 40px;
+#tentang-mcf-1 h1 {
+    font-size: 3.7em;
+    color: #fff;
+    margin-left: 50px;
+    font-weight: 300;
+    margin-bottom: 40px;
 }
 
 #tentang-mcf-1 p {
-	color:#fff;
-	font-size: 1.2em;
+    color: #fff;
+    font-size: 1.2em;
 }
 
 #tentang-mcf-2 h1 {
-	color:#fff;
-	font-size: 3.7em;
-	font-weight: 300;
+    color: #fff;
+    font-size: 3.7em;
+    font-weight: 300;
 }
 
 #tentang-mcf-2 ul {
-	list-style-type: decimal;
-	font-size: 20px;
-	padding-left: 10px;
+    list-style-type: decimal;
+    font-size: 20px;
+    padding-left: 10px;
     color: #fff;
 }
 
 #tentang-mcf-2 li:first-child {
-	margin-top: 20px;
+    margin-top: 20px;
 }
 
 #tentang-mcf-2 li {
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 #tentang-mcf-2 h2 {
-	font-size: 2.7em;
+    font-size: 2.7em;
     color: #fff;
 }
 
 #tentang-mcf-3 .head-title {
-	text-align: center;
-	color: #fff;
+    text-align: center;
+    color: #fff;
 }
 
 #tentang-mcf-3 .head-title h1 {
-	font-size: 3.7em;
-	font-weight: 300;
+    font-size: 3.7em;
+    font-weight: 300;
 }
 
 .program h2 {
-	color: #fff;
-	font-weight: 300;
-	text-align: center;
-	margin-bottom: 20px;
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .program {
-	text-align: center;
-	margin-top: 25px;
+    text-align: center;
+    margin-top: 25px;
 }
 
 .program img {
-	margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 .program p {
-	color: #fff;
-	font-size: 1.4em;
+    color: #fff;
+    font-size: 1.4em;
 }
+
 
 /*-------------------------------------------------------------------
                         DETAIL EVENT CSS SETTINGS
@@ -1268,14 +1284,15 @@ p.inner-desc {
 
 #detail-event .event-date {
     color: #28B6F6;
-    font-size: 1.7em;   
+    font-size: 1.7em;
 }
 
-#detail-event .event-time, #detail-event .event-place {
+#detail-event .event-time,
+#detail-event .event-place {
     font-size: 1.4em;
 }
 
-#detail-event p.event-time{
+#detail-event p.event-time {
     margin-bottom: 0;
 }
 
@@ -1291,4 +1308,231 @@ p.inner-desc {
         margin-bottom: 40px;
         color: #28B6F6;
     }
+}
+
+
+/*------------------------------------------------------------
+                FORUM LIST CSS SETTING
+------------------------------------------------------------*/
+
+#list-forum p.title {
+    color: #28b6f6;
+    font-size: 1.2em;
+    margin-left: 200px;
+}
+
+#list-forum .list-forum-content .col-md-6 {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px 20px;
+    min-height: 110px;
+}
+
+span.forum-list-title {
+    color: #28b6f6;
+    font-size: 1.3em;
+}
+
+#list-forum .forum-container {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.forum-highlight {
+    font-size: 1.2em;
+    color: #333;
+    font-weight: 300;
+}
+
+.forum-list-date {
+    color: #999;
+}
+
+.forum-count {
+    color: #f39c12;
+}
+
+
+/*--------------------------------------------------
+            FORUM KOLABORASI CSS SETTING
+--------------------------------------------------*/
+
+#forum-kolaborasi .kolaborasi-title {
+    color: #333;
+    font-size: 2.2em;
+}
+
+#forum-kolaborasi .kolaborasi-desc {
+    color: #666;
+    font-size: 1.4em;
+    margin-top: 20px;
+    font-weight: 300;
+}
+
+#forum-kolaborasi .sub-title {
+    color: #28B6F6;
+    font-size: 1.17em;
+}
+
+#forum-kolaborasi .form-control {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#forum-kolaborasi .form-control::-webkit-input-placeholder {
+    font-style: italic;
+}
+
+#forum-kolaborasi .form-control {
+    border-radius: 2px;
+}
+
+#forum-kolaborasi .form-control::-moz-placeholder {
+    font-style: italic;
+}
+
+#forum-kolaborasi .form-control:-ms-input-placeholder {
+    font-style: italic;
+}
+
+#forum-kolaborasi .form-control::-webkit-input-placeholder {
+    font-style: italic;
+}
+
+#forum-kolaborasi .form-control::placeholder {
+    font-style: italic;
+}
+
+#forum-kolaborasi textarea {
+    resize: vertical;
+}
+
+.forum-populer-left {
+    padding-top: 50px;
+}
+
+.forum-populer-left img {
+    max-height: 75px;
+    border: 3px solid #cecccf;
+    border-radius: 100%;
+    /*    position: absolute;*/
+}
+
+.forum-populer-left .comment-profile-name {
+    font-size: 2em;
+    vertical-align: middle;
+    font-weight: 600;
+    margin: 5px 0 0;
+}
+
+.forum-populer-left .comment-post-date {
+    color: #999;
+}
+
+.forum-populer-left span.post-owner {
+    text-align: left;
+    margin-left: 90px;
+}
+
+.forum-populer-left .reputation-title {
+    font-size: .9em;
+    color: #666;
+    margin-bottom: 0;
+}
+
+.forum-populer-left .reputation-count {
+    font-size: 1.5em;
+    margin-right: 35px;
+}
+
+.forum-populer-left .forum-title {
+    font-weight: 600;
+    line-height: 1.3em;
+    text-align: justify;
+}
+
+.forum-populer-left .forum-content {
+    line-height: 1.2em;
+    color: #666;
+    text-align: justify;
+}
+
+.forum-populer-left textarea {
+    resize: none;
+}
+
+.forum-populer-right {
+    padding-top: 35px;
+}
+
+.forum-populer-right .head-title {
+    color: #28B6F6;
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.forum-hr {
+    color: #666;
+    border-top: 1px solid #999;
+    border-bottom: none;
+    width: 100%;
+    margin-top: 0;
+}
+
+.forum-populer-right .listing-forum {
+    overflow-y: scroll;
+    height: 650px;
+}
+
+.forum-populer-right .inner-list-forum {
+    padding: 10px;
+}
+
+.forum-populer-right .inner-list-forum-owner {
+    font-size: 1.5em;
+    color: #222;
+    line-height: 1.7em;
+}
+
+.forum-populer-right .inner-list-forum-date {
+    font-size: .9em;
+    color: #aaa;
+    margin-top: 10px;
+}
+
+.forum-populer-right .inner-list-forum-content {
+    text-align: justify;
+    line-height: 1.7em;
+    color: #666;
+    font-size: 1.2em;
+}
+
+.list-forum-content {
+    margin-top: 50px;
+}
+
+.list-forum-content .col-md-6 {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px 20px;
+    min-height: 110px;
+}
+
+.forum-kolaborasi-button-bottom .btn {
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1.7em;
+    border-radius: 1px;
+}
+
+.button-social-bottom .count {
+    border: 1px solid #666;
+    font-size: .8em;
+    padding: 2px;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+
+.twitter-btn .fa {
+    color: #28B6F6;
 }
