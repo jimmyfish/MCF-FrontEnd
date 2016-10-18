@@ -1,112 +1,97 @@
 @media screen and (max-width: 1288px) {
-	.navbar-header {
-		margin-left: 100px;
-	}
-}
-
-@media screen and (max-width: 1288px) {
-	.navbar-brand-mini {
-		display: block;
-	}
-
-	.header-logo {
-		display: none;
-	}
-
-	.container-fluid > .navbar-header {
-		margin-left: 60px;
-	}
-}
-
-@media screen and (min-width: 1170px) {
-    
-    ul.nav.navbar-nav {
-
+    .navbar-header {
+        margin-left: 100px;
     }
 }
 
-@media (min-width: 780px) and (max-width: 1068px) {
-	
+@media screen and (max-width: 1288px) {
+    .navbar-brand-mini {
+        display: block;
+    }
+    .header-logo {
+        display: none;
+    }
+    .container-fluid > .navbar-header {
+        margin-left: 60px;
+    }
+}
 
-	.navbar-brand-mini, .navbar-brand {
-		display: none;
-	}
+@media screen and (min-width: 1170px) {
+    ul.nav.navbar-nav {}
+}
+
+@media (min-width: 780px) and (max-width: 1068px) {
+    .navbar-brand-mini,
+    .navbar-brand {
+        display: none;
+    }
 }
 
 @media (min-width: 1120px) and (max-width: 1170px) {
-	.container-fluid > .navbar-header {
-		margin-left: 50px;
-	}
+    .container-fluid > .navbar-header {
+        margin-left: 50px;
+    }
 }
 
 @media (max-width: 768px) {
-	.home-text {
-		display: block;
-	}
-
-	.home-icon {
-		display: none;
-	}
-
-	.navbar ul {
-		height: auto;
-	}
-
-	li.sign-in a:not(.lupa-password), li.sign-up a:not(.btn) {
-		padding: 10px 15px;
-		margin-top: 0;
-	}
+    .home-text {
+        display: block;
+    }
+    .home-icon {
+        display: none;
+    }
+    .navbar ul {
+        height: auto;
+    }
+    li.sign-in a:not(.lupa-password),
+    li.sign-up a:not(.btn) {
+        padding: 10px 15px;
+        margin-top: 0;
+    }
 }
 
-@media (min-width: 780px) {
-
-}
+@media (min-width: 780px) {}
 
 @media (min-width: 780px) {
-	.navbar-nav {
-		float: right !important;
-	}
-
-	.navbar-nav > li:not(.sign-in):not(.sign-up):not(.allready-login) > a:not(.home-tabs) {
-	    padding: 30px 33.5px;
-	}
-
-	.nav > li > a.home-tabs {
-		padding:26px 20px;
-	}
+    .navbar-nav {
+        float: right !important;
+    }
+    .navbar-nav > li:not(.sign-in):not(.sign-up):not(.allready-login) > a:not(.home-tabs) {
+        padding: 30px 33.5px;
+    }
+    .nav > li > a.home-tabs {
+        padding: 26px 20px;
+    }
 }
 
 @media (max-width: 1070px) {
-	.separator {
-		display: none;
-	}
+    .separator {
+        display: none;
+    }
 }
 
-@media (min-width: 1070px) {
-	
-}
+@media (min-width: 1070px) {}
 
 @media (max-width: 990px) {
-	#myCarousel div.item div.row {
-		text-align: center;
-	}
-
-	#myCarousel div.item div.row img {
-		margin-left: auto;
-		margin-right: auto;	
-	}
+    #myCarousel div.item div.row {
+        text-align: center;
+    }
+    #myCarousel div.item div.row img {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media (max-width: 1200px) {
-	.comment-bottom-count {
-		width: 100%;
-	}
+    .comment-bottom-count {
+        width: 100%;
+    }
 }
 
 @media (max-width: 1188px) {
-	p.separator {
-		display: none;
-	}
+    p.separator {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1170px) {
@@ -131,41 +116,44 @@
 }
 
 @media (min-width: 768px) and (max-width: 913px) {
-	li.sign-in a:not(.lupa-password),
-	li.sign-up a:not(.btn) {
-		padding: 30px 15px;
-		margin-top:0;
-	}
+    li.sign-in a:not(.lupa-password),
+    li.sign-up a:not(.btn) {
+        padding: 30px 15px;
+        margin-top: 0;
+    }
 }
 
 @media (max-width: 913px) {
-	.navbar-img {
-		display: none;
-	}
-	li.sign-in a:not(.lupa-password),
-	li.sign-up a:not(.btn) {
-		margin-top:0;
-	}
+    .navbar-img {
+        display: none;
+    }
+    li.sign-in a:not(.lupa-password),
+    li.sign-up a:not(.btn) {
+        margin-top: 0;
+    }
 }
 
 @media (max-width: 992px) {
-	.col-md-3 {
-		max-width: 275px;
-		margin-left: 230px;
-	}	
-
-	.product-details {
-		text-align: center;
-	}
-    
+    .col-md-3 {
+        max-width: 275px;
+        margin-left: 230px;
+    }
+    .product-details {
+        text-align: center;
+    }
     #form-mcf .detail-member-desc {
         text-align: center;
         font-size: 2em;
     }
-    
     #form-mcf .btn-purple {
-        width:100%;
+        width: 100%;
         height: 40px;
         border-radius: 2px;
+    }
+}
+
+@media (min-width:992px) {
+    #list-forum .list-forum-content .col-md-6 {
+        width: 45.6%;
     }
 }
