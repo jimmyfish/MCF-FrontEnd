@@ -1524,3 +1524,15 @@ span.forum-list-title {
     line-height: 1.7em;
     border-radius: 1px;
 }
+
+.button-social-bottom .count {
+    border: 1px solid #666;
+    font-size: .8em;
+    padding: 2px;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+
+.twitter-btn .fa {
+    color: #28B6F6;
+}
