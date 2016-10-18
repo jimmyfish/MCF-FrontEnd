@@ -239,9 +239,17 @@ ul.nav li.active > a {
 
 #detail-subsektor {
     background-color: #fafafa;
-    height: 1000px;
-    /*height: auto;*/
+    /*    height: 1000px;*/
+    height: auto;
     padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+#forum-kolaborasi {
+    background-color: #fafafa;
+    height: auto;
+    /*    height: 2000px;*/
+    padding-top: 100px;
     padding-bottom: 150px;
 }
 
@@ -1342,4 +1350,177 @@ span.forum-list-title {
 
 .forum-count {
     color: #f39c12;
+}
+
+
+/*--------------------------------------------------
+            FORUM KOLABORASI CSS SETTING
+--------------------------------------------------*/
+
+#forum-kolaborasi .kolaborasi-title {
+    color: #333;
+    font-size: 2.2em;
+}
+
+#forum-kolaborasi .kolaborasi-desc {
+    color: #666;
+    font-size: 1.4em;
+    margin-top: 20px;
+    font-weight: 300;
+}
+
+#forum-kolaborasi .sub-title {
+    color: #28B6F6;
+    font-size: 1.17em;
+}
+
+#forum-kolaborasi .form-control {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#forum-kolaborasi .form-control::-webkit-input-placeholder {
+    font-style: italic;
+}
+
+#forum-kolaborasi .form-control {
+    border-radius: 2px;
+}
+
+#forum-kolaborasi .form-control::-moz-placeholder {
+    font-style: italic;
+}
+
+#forum-kolaborasi .form-control:-ms-input-placeholder {
+    font-style: italic;
+}
+
+#forum-kolaborasi .form-control::-webkit-input-placeholder {
+    font-style: italic;
+}
+
+#forum-kolaborasi .form-control::placeholder {
+    font-style: italic;
+}
+
+#forum-kolaborasi textarea {
+    resize: vertical;
+}
+
+.forum-populer-left {
+    padding-top: 50px;
+}
+
+.forum-populer-left img {
+    max-height: 75px;
+    border: 3px solid #cecccf;
+    border-radius: 100%;
+    /*    position: absolute;*/
+}
+
+.forum-populer-left .comment-profile-name {
+    font-size: 2em;
+    vertical-align: middle;
+    font-weight: 600;
+    margin: 5px 0 0;
+}
+
+.forum-populer-left .comment-post-date {
+    color: #999;
+}
+
+.forum-populer-left span.post-owner {
+    text-align: left;
+    margin-left: 90px;
+}
+
+.forum-populer-left .reputation-title {
+    font-size: .9em;
+    color: #666;
+    margin-bottom: 0;
+}
+
+.forum-populer-left .reputation-count {
+    font-size: 1.5em;
+    margin-right: 35px;
+}
+
+.forum-populer-left .forum-title {
+    font-weight: 600;
+    line-height: 1.3em;
+    text-align: justify;
+}
+
+.forum-populer-left .forum-content {
+    line-height: 1.2em;
+    color: #666;
+    text-align: justify;
+}
+
+.forum-populer-left textarea {
+    resize: none;
+}
+
+.forum-populer-right {
+    padding-top: 35px;
+}
+
+.forum-populer-right .head-title {
+    color: #28B6F6;
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.forum-hr {
+    color: #666;
+    border-top: 1px solid #999;
+    border-bottom: none;
+    width: 100%;
+    margin-top: 0;
+}
+
+.forum-populer-right .listing-forum {
+    overflow-y: scroll;
+    height: 650px;
+}
+
+.forum-populer-right .inner-list-forum {
+    padding: 10px;
+}
+
+.forum-populer-right .inner-list-forum-owner {
+    font-size: 1.5em;
+    color: #222;
+    line-height: 1.7em;
+}
+
+.forum-populer-right .inner-list-forum-date {
+    font-size: .9em;
+    color: #aaa;
+    margin-top: 10px;
+}
+
+.forum-populer-right .inner-list-forum-content {
+    text-align: justify;
+    line-height: 1.7em;
+    color: #666;
+    font-size: 1.2em;
+}
+
+.list-forum-content {
+    margin-top: 50px;
+}
+
+.list-forum-content .col-md-6 {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px 20px;
+    min-height: 110px;
+}
+
+.forum-kolaborasi-button-bottom .btn {
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1.7em;
+    border-radius: 1px;
 }
