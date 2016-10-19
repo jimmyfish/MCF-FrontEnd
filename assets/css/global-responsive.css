@@ -168,4 +168,7 @@
     #forum-kolaborasi .list-forum-content .col-md-6 {
         width: 45.6%;
     }
+    #detail-berita .container {
+        width: 1060px;
+    }
 }

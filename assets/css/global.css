@@ -253,6 +253,12 @@ ul.nav li.active > a {
     padding-bottom: 150px;
 }
 
+#detail-berita {
+    background-color: #fafafa;
+    padding-bottom: 150px;
+    height: auto;
+}
+
 
 /*-- SECTION TENTANG MCF --*/
 
@@ -1535,4 +1541,47 @@ span.forum-list-title {
 
 .twitter-btn .fa {
     color: #28B6F6;
+}
+
+
+/*------------------------------------------------------
+                DETAIL BERITA CSS SETTINGS
+------------------------------------------------------*/
+
+#detail-berita .detail-berita-header img {
+    width: 100%;
+    max-height: 300px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+#detail-berita br {
+    margin-bottom: 35px;
+}
+
+.detail-berita-content {
+    margin: 50px 0 0;
+}
+
+.detail-berita-content .detail-berita-title {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.detail-berita-content .detail-berita-date {
+    color: #28b6f6;
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-top: 0;
+}
+
+.detail-berita-content .detail-berita-article-content {
+    font-size: 1.1em;
+    line-height: 1.4em;
+    color: #333;
+    font-weight: 300;
+    text-indent: 2em;
+    text-align: justify;
+    margin-top: 25px;
 }
