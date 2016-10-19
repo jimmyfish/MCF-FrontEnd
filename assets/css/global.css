@@ -253,6 +253,26 @@ ul.nav li.active > a {
     padding-bottom: 150px;
 }
 
+#detail-berita {
+    background-color: #fafafa;
+    padding-bottom: 150px;
+    height: auto;
+}
+
+#gallery {
+    background-color: #fafafa;
+    padding-bottom: 150px;
+    padding-top: 100px;
+    height: auto;
+}
+
+#detail-gallery {
+    background-color: #fafafa;
+    padding-bottom: 150px;
+    padding-top: 100px;
+    height: auto;
+}
+
 
 /*-- SECTION TENTANG MCF --*/
 
@@ -1535,4 +1555,169 @@ span.forum-list-title {
 
 .twitter-btn .fa {
     color: #28B6F6;
+}
+
+
+/*------------------------------------------------------
+                DETAIL BERITA CSS SETTINGS
+------------------------------------------------------*/
+
+#detail-berita .detail-berita-header img {
+    width: 100%;
+    max-height: 300px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+#detail-berita br {
+    margin-bottom: 35px;
+}
+
+.detail-berita-content {
+    margin: 50px 0 0;
+}
+
+.detail-berita-content .detail-berita-title {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.detail-berita-content .detail-berita-date {
+    color: #28b6f6;
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-top: 0;
+}
+
+.detail-berita-content .detail-berita-article-content {
+    font-size: 1.1em;
+    line-height: 1.4em;
+    color: #333;
+    font-weight: 300;
+    text-indent: 2em;
+    text-align: justify;
+    margin-top: 25px;
+}
+
+
+/*-----------------------------------------------------------
+                    GALLERY CSS SETTING
+-----------------------------------------------------------*/
+
+#gallery img {
+    max-width: 240px;
+    width: 240px;
+    max-height: 175px;
+    height: 175px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+#gallery .image-popups {
+    background-color: #fff;
+    width: 240px;
+    min-height: 295px;
+    /*    margin-top: 50px;*/
+}
+
+#gallery .col-md-3 {
+    margin-bottom: 50px;
+}
+
+#gallery .gallery-caption {
+    padding: 15px;
+}
+
+.gallery-img-date {
+    margin-bottom: 0;
+    color: #28b6f6;
+}
+
+.gallery-img-title {
+    margin-bottom: 0;
+    color: #666;
+    font-size: 1.4em;
+}
+
+.gallery-btn-bottom button[disabled] {
+    background-color: #eee;
+}
+
+.gallery-btn-bottom a[disabled] {
+    color: #999;
+}
+
+.gallery-btn-bottom a {
+    color: #666;
+}
+
+.gallery-btn-bottom button {
+    background-color: #fff;
+    border: none;
+    box-shadow: none;
+    border-radius: 5px;
+    padding: 1px 10px;
+    margin-right: 5px;
+}
+
+.bottom-count {
+    vertical-align: middle;
+    display: inline-block;
+    /*    height: 48px;*/
+    margin: -23px 20px 0;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.bottom-count span {
+    font-size: 1.3em;
+}
+
+
+/*--------------------------------------------------------
+                DETAIL GALLERY CSS SETTING
+--------------------------------------------------------*/
+
+#detail-gallery .detail-gallery-title {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+#detail-gallery .detail-gallery-date {
+    color: #28b6f6;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+#detail-gallery .detail-gallery-desc {
+    color: #666;
+    font-size: 1.2em;
+    line-height: 1.7em;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.detail-gallery-desc br {
+    margin-bottom: 20px;
+}
+
+.detail-gallery-content {
+    margin-top: 50px;
+}
+
+#detail-gallery img {
+    max-width: 240px;
+    width: 240px;
+    max-height: 240px;
+    height: 240px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+#detail-gallery .image-popups {
+    width: 240px;
+    min-height: 295px;
 }
