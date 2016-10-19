@@ -171,4 +171,10 @@
     #detail-berita .container {
         width: 1060px;
     }
+    #galery .container {
+        width: 1060px;
+    }
+    #detail-gallery .container {
+        width: 1060px;
+    }
 }
