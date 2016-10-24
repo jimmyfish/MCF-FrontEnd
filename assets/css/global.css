@@ -443,8 +443,8 @@ hr {
 
 .title-separator {
     width: 100%;
-    height: 15px;
-    border-bottom: 3px solid #28B6F6;
+    height: 13px;
+    border-bottom: 1px solid #28B6F6;
     text-align: center;
 }
 
@@ -945,6 +945,30 @@ hr {
 .product-button .btn {
     line-height: 2em;
     font-size: 20px;
+}
+
+#content-4 img {
+    max-width: 240px;
+    width: 240px;
+    max-height: 175px;
+    height: 175px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+#content-4 .image-popups {
+    background-color: #fff;
+    width: 240px;
+    min-height: 295px;
+    box-shadow: 1px 1px 7px #bbb;
+}
+
+#content-4 .col-md-3 {
+    margin-bottom: 50px;
+}
+
+#content-4 .gallery-caption {
+    padding: 15px;
 }
 
 
@@ -1618,7 +1642,7 @@ span.forum-list-title {
     background-color: #fff;
     width: 240px;
     min-height: 295px;
-    /*    margin-top: 50px;*/
+    box-shadow: 0 0 7px #bbb;
 }
 
 #gallery .col-md-3 {
