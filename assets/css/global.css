@@ -1721,3 +1721,11 @@ span.forum-list-title {
     width: 240px;
     min-height: 295px;
 }
+
+#gallery .first-title {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
