@@ -1579,6 +1579,7 @@ span.forum-list-title {
 
 .twitter-btn .fa {
     color: #28B6F6;
+    border: none;
 }
 
 
@@ -1752,4 +1753,3 @@ span.forum-list-title {
     margin-right: auto;
     width: 100%;
 }
-
