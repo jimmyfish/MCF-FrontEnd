@@ -49,7 +49,8 @@ input[type="file"] {
     display: none;
 }
 
-#form-mcf img {
+#form-mcf img,
+#form-kerjasama img {
     background-position: center center;
 }
 
@@ -59,23 +60,29 @@ input[type="file"] {
     transition: all .4s ease;
 }
 
-#form-mcf img {
+#form-mcf img,
+#form-kerjasama img {
     position: relative;
 }
 
 #form-mcf input[type="text"],
-#form-mcf input[type="email"] {
+#form-mcf input[type="email"],
+#form-kerjasama input[type="text"],
+#form-kerjasama input[type="email"] {
     height: 40px;
     font-size: 1.2em;
     font-weight: 300;
 }
 
 #form-mcf input[type="text"].form-control,
-#form-mcf input[type="email"].form-control {
+#form-mcf input[type="email"].form-control,
+#form-kerjasama input[type="text"].form-control,
+#form-kerjasama input[type="email"].form-control {
     border-radius: 0;
 }
 
-#form-mcf select.form-control {
+#form-mcf select.form-control,
+#form-kerjasama select.form-control {
     height: 40px;
     border-radius: 0;
     font-size: 1.2em;
@@ -86,19 +93,22 @@ input[type="file"] {
     background: url("../img/cd-required.svg") no-repeat top right;
 }
 
-#form-mcf input[type="radio"] {
+#form-mcf input[type="radio"],
+#form-kerjasama input[type="radio"] {
     vertical-align: middle;
 }
 
-#form-mcf span.fa {
+#form-mcf span.fa,
+#form-kerjasama span.fa {
     float: left;
     position: relative;
 }
 
-#form-mcf {
+#form-mcf,
+#form-kerjasama {
     padding-top: 20px;
-/*    height: 600px;*/
-     height: auto; 
+    /*    height: 600px;*/
+    height: auto;
     margin-bottom: 100px;
     background-color: #fafafa;
 }
@@ -140,11 +150,11 @@ span.btn-desc {
 
 .lblUpload {
     background-color: #3498db;
-    padding:30px;
+    padding: 30px;
     width: 49.6%;
     cursor: pointer;
     color: #fff;
-/*    font-size: 1.2em;*/
+    /*    font-size: 1.2em;*/
     text-align: center;
     text-transform: capitalize;
 }
