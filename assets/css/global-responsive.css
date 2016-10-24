@@ -156,7 +156,10 @@
     #list-forum .list-forum-content .col-md-6 {
         width: 45.6%;
     }
-    #forum-kolaborasi .container {
+    #forum-kolaborasi .container,
+    #detail-berita .container,
+    #galery .container,
+    #detail-gallery .container {
         width: 1060px;
     }
     .forum-populer-left .reputation-title {
@@ -167,14 +170,5 @@
     }
     #forum-kolaborasi .list-forum-content .col-md-6 {
         width: 45.6%;
-    }
-    #detail-berita .container {
-        width: 1060px;
-    }
-    #galery .container {
-        width: 1060px;
-    }
-    #detail-gallery .container {
-        width: 1060px;
     }
 }
