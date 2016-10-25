@@ -299,9 +299,8 @@ ul.nav li.active > a {
 }
 
 #list-forum {
-    /*    height: auto;*/
-    height: 1000px;
-    padding-top: 30px;
+    height: auto;
+    padding-top: 50px;
     padding-bottom: 180px;
     background-color: #fafafa;
 }
@@ -1370,6 +1369,7 @@ p.inner-desc {
     padding: 20px;
     margin: 10px 20px;
     min-height: 110px;
+    box-shadow: 0 0 15px #aaa;
 }
 
 span.forum-list-title {
@@ -1385,15 +1385,57 @@ span.forum-list-title {
 .forum-highlight {
     font-size: 1.2em;
     color: #333;
-    font-weight: 300;
+    text-align: justify;
 }
 
 .forum-list-date {
     color: #999;
+    font-weight: 300;
 }
 
-.forum-count {
-    color: #f39c12;
+ul.forum-count {
+    list-style: none;
+    display: block;
+    padding: 0;
+}
+
+ul.forum-count li:first-child {
+    margin-top: -20px;
+}
+
+ul.forum-count li .fa {
+    color: #28b6f6;
+}
+
+.text-count {
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.forum-state {
+    font-size: .9em;
+    font-weight: bold;
+    padding: 2.5px 5px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    width: 75px;
+    text-align: center;
+    margin-top: 3px;
+}
+
+.state-danger {
+    background-color: #d9534f;
+    color: #fff;
+}
+
+.state-execute {
+    background-color: #9b59b6;
+    color: #fff;
+}
+
+.state-open {
+    background-color: #2ecc71;
+    color: #fff;
 }
 
 
