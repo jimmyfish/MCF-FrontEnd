@@ -6,6 +6,8 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/form.css">
+
     <link rel="stylesheet" type="text/css" href="assets/css/global.css">
     <link rel="stylesheet" type="text/css" href="assets/css/global-responsive.css">
     <link rel="icon" type="icon" href="assets/img/mcf-logo.png">
@@ -81,31 +83,70 @@
     </nav>
     <section id="forum-kolaborasi">
         <div class="container">
+            <center>
+                <div class="upper-title">
+                    <span class="first-title">
+                    FORUM KOLABORASI
+                </span>
+                </div>
+            </center>
+            <p>&nbsp;</p>
             <div class="row">
-                <div class="col-md-6">
-                    <h1 class="kolaborasi-title">
+                <h1 class="kolaborasi-title">
                         Apa itu Forum Kolaborasi ?
                     </h1>
+                <div class="col-md-6">
+                    <img src="assets/img/comment-bubble.png">
+                </div>
+                <div class="col-md-6">
+
                     <p class="kolaborasi-desc">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna odio, vulputate in risus id, vestibulum faucibus nunc. Maecenas eu consequat quam. Vestibulum sollicitudin gravida mi in venenatis.
                     </p>
                 </div>
-                <div class="col-md-6">
-                    <p class="sub-title">
-                        Terbitkan Ide Anda!
-                    </p>
-                    <form action="" method="post">
-                        <div class="form-group">
-                            <input type="text" placeholder="Judul" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Deskripsi" class="form-control" rows="4"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <input type="submit" class="btn btn-purple pull-right" value="terbitkan">
-                        </div>
-                    </form>
+            </div>
+            <div class="row">
+                <div class="title-separator">
+                    <span class="first-title">
+                        Terbitkan Ide Anda
+                    </span>
                 </div>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <form class="form-terbitkan" action="" method="post">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Judul">
+                        </div>
+                        <div class="form-group">
+                            <p class="cd-select">
+                                <select name="" class="form-control">
+                                    <option>- Select Category -</option>
+                                    <option value="">Option 1</option>
+                                    <option value="">Option 2</option>
+                                    <option value="">Option 3</option>
+                                </select>
+                            </p>
+                        </div>
+                        <div class="form-group">
+                            <label for="attachment" class="input-file">
+                                <i class="fa fa-paperclip"></i>
+                            </label>
+                            <span class="input-file-span">Lampirkan Gambar / Foto</span>
+                            <span class="input-file-span-maksimum pull-right">Gambar Maksimum 2mb</span>
+                            <input type="file" accept="image/jpeg, image/gif, image/png" id="attachment" name="attachment" class="hide">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <textarea placeholder="Deskripsi" class="form-control" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-purple" value="terbitkan">
+                        </div>
+                    </div>
+                </form>
+
             </div>
             <p>&nbsp;</p>
             <div class="second">
@@ -118,6 +159,19 @@
                 <div class="forum-populer">
                     <div class="row">
                         <div class="col-md-6 forum-populer-left">
+                            <div class="row m20">
+                                <div class="col-xs-2">
+                                    <ul class="forum-count">
+                                        <li><a href="#"><i class="fa fa-caret-up fa-4x"></i></a></li>
+                                        <li class="text-count">36</li>
+                                        <li><a href="#"><i class="fa fa-caret-down fa-4x"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-10">
+                                    <h3 class="forum-tag mb20">#Seni&amp;Pertunjukkan</h3>
+                                    <h3 class="forum-title no-margin-top">Membutuhkan bantuan untuk event seni pertunjukan di Malang kota bulan November 2016</h3>
+                                </div>
+                            </div>
                             <div class="row">
                                 <div class="col-sm-3">
                                     <img src="assets/img/comment-profile/john.jpg" class="pull-right">
@@ -129,16 +183,18 @@
                                 </div>
                             </div>
                             <p>&nbsp;</p>
-                            <div class="forum-reputation">
-                                <p class="reputation-title">Reputation :</p>
-                                <span class="reputation-count">30 Likes</span>
-                                <span>
+                            <!--
+                        <div class="forum-reputation">
+    <p class="reputation-title">Reputation :</p>
+    <span class="reputation-count">30 Likes</span>
+    <span>
                                     <a href="#">
                                         <i class="fa fa-plus"></i> Add Reputation
                                     </a>
                                 </span>
-                            </div>
-                            <h3 class="forum-title">Membutuhkan bantuan untuk event seni pertunjukan di Malang kota bulan November 2016</h3>
+</div>
+-->
+
                             <h4 class="forum-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fringilla sem vel facilisis fringilla. Sed quis turpis quis ipsum pretium dapibus ut id mi. Aliquam erat volutpat. Quisque eget sollicitudin massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a tempor sapien.</h4>
                             <p>&nbsp;</p>
                             <form action="" method="post">
@@ -203,9 +259,25 @@
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fringilla sem vel facilisis fringilla. Sed quis turpis quis ipsum pretium dapibus ut id mi. Aliquam erat volutpat. Quisque eget sollicitudin massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a tempor sapien.
                                     </p>
                                 </div>
+
                             </div>
                             <p>&nbsp;</p>
                             <hr class="forum-hr">
+                            <div class="button-social-bottom">
+                                <span class="facebook-btn">
+                                <a href="#" class="btn btn-xs btn-primary">
+                                    <i class="fa fa-facebook-square"></i> Like
+                                </a>
+                                <span class="count">23</span>
+                                </span>
+
+                                <span class="twitter-btn">
+                                <a href="#" class="btn btn-xs btn-default">
+                                    <i class="fa fa-twitter"></i> Tweet
+                                </a>
+                                <span class="count">100</span>
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -219,96 +291,151 @@
                 </div>
                 <div class="row list-forum-content">
                     <div class="col-md-6">
-                        <span class="forum-list-title">
-                            Gallery Widya E.
-                            
-                        </span>
-                        <span class="forum-count pull-right">
-                            <a href="#count">
-                                <i class="fa fa-thumbs-o-up"></i>
-                                27
-                            </a>
-                        </span>
-                        <p class="forum-highlight">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna odio, vulputate in risus id, vestibulum faucibus nunc.
-                        </p>
-                        <p class="forum-list-date">
-                            Sabtu, 17 November 2016 - 08:10
-                        </p>
+                        <div class="col-md-2">
+                            <ul class="forum-count">
+                                <li><a href="#"><i class="fa fa-caret-up fa-4x"></i></a></li>
+                                <li class="text-count">36</li>
+                                <li><a href="#"><i class="fa fa-caret-down fa-4x"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-10">
+                            <p class="forum-highlight">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna odio, vulputate in risus id, vestibulum faucibus nunc.
+                            </p>
+                            <p class="forum-list-date">
+                                Sabtu, 17 November 2016 - 08:10
+                            </p>
+                            <span class="forum-list-title">
+                                Miftahul Huda
+
+                            </span>
+                            <span class="forum-state state-danger pull-right">
+                                Closed
+                            </span>
+                        </div>
                     </div>
                     <div class="col-md-6">
-                        <span class="forum-list-title">
-                            Gallery Widya E.
-                            
-                        </span>
-                        <span class="forum-count pull-right">
-                            <a href="#count">
-                                <i class="fa fa-thumbs-o-up"></i>
-                                27
-                            </a>
-                        </span>
-                        <p class="forum-highlight">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna odio, vulputate in risus id, vestibulum faucibus nunc.
-                        </p>
-                        <p class="forum-list-date">
-                            Sabtu, 17 November 2016 - 08:10
-                        </p>
+                        <div class="col-md-2">
+                            <ul class="forum-count">
+                                <li><a href="#"><i class="fa fa-caret-up fa-4x"></i></a></li>
+                                <li class="text-count">36</li>
+                                <li><a href="#"><i class="fa fa-caret-down fa-4x"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-10">
+                            <p class="forum-highlight">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna odio, vulputate in risus id, vestibulum faucibus nunc.
+                            </p>
+                            <p class="forum-list-date">
+                                Sabtu, 17 November 2016 - 08:10
+                            </p>
+                            <span class="forum-list-title">
+                                M. Ziaelfikar A.
+
+                            </span>
+                            <span class="forum-state state-execute pull-right">
+                                execute
+                            </span>
+                        </div>
                     </div>
                     <div class="col-md-6">
-                        <span class="forum-list-title">
-                            Gallery Widya E.
-                            
-                        </span>
-                        <span class="forum-count pull-right">
-                            <a href="#count">
-                                <i class="fa fa-thumbs-o-up"></i>
-                                27
-                            </a>
-                        </span>
-                        <p class="forum-highlight">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna odio, vulputate in risus id, vestibulum faucibus nunc.
-                        </p>
-                        <p class="forum-list-date">
-                            Sabtu, 17 November 2016 - 08:10
-                        </p>
+                        <div class="col-md-2">
+                            <ul class="forum-count">
+                                <li><a href="#"><i class="fa fa-caret-up fa-4x"></i></a></li>
+                                <li class="text-count">36</li>
+                                <li><a href="#"><i class="fa fa-caret-down fa-4x"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-10">
+                            <p class="forum-highlight">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna odio, vulputate in risus id, vestibulum faucibus nunc.
+                            </p>
+                            <p class="forum-list-date">
+                                Sabtu, 17 November 2016 - 08:10
+                            </p>
+                            <span class="forum-list-title">
+                                Fariz Rizky
+
+                            </span>
+                            <span class="forum-state state-open pull-right">
+                                open
+                            </span>
+                        </div>
                     </div>
                     <div class="col-md-6">
-                        <span class="forum-list-title">
-                            Gallery Widya E.
-                            
-                        </span>
-                        <span class="forum-count pull-right">
-                            <a href="#count">
-                                <i class="fa fa-thumbs-o-up"></i>
-                                27
-                            </a>
-                        </span>
-                        <p class="forum-highlight">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna odio, vulputate in risus id, vestibulum faucibus nunc.
-                        </p>
-                        <p class="forum-list-date">
-                            Sabtu, 17 November 2016 - 08:10
-                        </p>
+                        <div class="col-md-2">
+                            <ul class="forum-count">
+                                <li><a href="#"><i class="fa fa-caret-up fa-4x"></i></a></li>
+                                <li class="text-count">36</li>
+                                <li><a href="#"><i class="fa fa-caret-down fa-4x"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-10">
+                            <p class="forum-highlight">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna odio, vulputate in risus id, vestibulum faucibus nunc.
+                            </p>
+                            <p class="forum-list-date">
+                                Sabtu, 17 November 2016 - 08:10
+                            </p>
+                            <span class="forum-list-title">
+                                Gallery Widya E.
+
+                            </span>
+                            <span class="forum-state state-danger pull-right">
+                                Closed
+                            </span>
+                        </div>
                     </div>
                     <div class="col-md-6">
-                        <span class="forum-list-title">
-                            Gallery Widya E.
-                            
-                        </span>
-                        <span class="forum-count pull-right">
-                            <a href="#count">
-                                <i class="fa fa-thumbs-o-up"></i>
-                                27
-                            </a>
-                        </span>
-                        <p class="forum-highlight">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna odio, vulputate in risus id, vestibulum faucibus nunc.
-                        </p>
-                        <p class="forum-list-date">
-                            Sabtu, 17 November 2016 - 08:10
-                        </p>
+                        <div class="col-md-2">
+                            <ul class="forum-count">
+                                <li><a href="#"><i class="fa fa-caret-up fa-4x"></i></a></li>
+                                <li class="text-count">36</li>
+                                <li><a href="#"><i class="fa fa-caret-down fa-4x"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-10">
+                            <p class="forum-highlight">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna odio, vulputate in risus id, vestibulum faucibus nunc.
+                            </p>
+                            <p class="forum-list-date">
+                                Sabtu, 17 November 2016 - 08:10
+                            </p>
+                            <span class="forum-list-title">
+                                Gallery Widya E.
+
+                            </span>
+                            <span class="forum-state state-danger pull-right">
+                                Closed
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="col-md-2">
+                            <ul class="forum-count">
+                                <li><a href="#"><i class="fa fa-caret-up fa-4x"></i></a></li>
+                                <li class="text-count">36</li>
+                                <li><a href="#"><i class="fa fa-caret-down fa-4x"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-10">
+                            <p class="forum-highlight">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna odio, vulputate in risus id, vestibulum faucibus nunc.
+                            </p>
+                            <p class="forum-list-date">
+                                Sabtu, 17 November 2016 - 08:10
+                            </p>
+                            <span class="forum-list-title">
+                                Gallery Widya E.
+
+                            </span>
+                            <span class="forum-state state-execute pull-right">
+                                Execute
+                            </span>
+                        </div>
                     </div>
                 </div>
+                <p>&nbsp;</p>
                 <div class="forum-kolaborasi-button-bottom">
                     <a href="#" class="btn btn-purple btn-block btn-lg">
                         semua arsip forum kolaborasi
