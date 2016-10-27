@@ -1,235 +1,410 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Welcome - Malang Creative Fusion</title>
-		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/global.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/global-responsive.css">
-		<link rel="icon" type="icon" href="assets/img/mcf-logo.png">
-	</head>
-	<body>
-		<nav class="navbar navbar-blue">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
+
+<head>
+    <title>Pie</title>
+    <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/global.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/global-responsive.css">
+    <link rel="icon" type="icon" href="assets/img/mcf-logo.png">
+    <script src="assets/js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/knockout-3.0.0.js"></script>
+    <script src="assets/js/globalize.min.js"></script>
+    <script src="assets/js/dx.chartjs.js"></script>
+
+</head>
+
+<body>
+    <script>
+        $(function () {
+                var dataSource = [
+                    {
+                        country: "Aplikasi dan Pengembangan Game",
+                        area: 12
+                    },
+                    {
+                        country: "Arsitektur",
+                        area: 7
+                    },
+                    {
+                        country: "Desain Interior",
+                        area: 7
+                    },
+                    {
+                        country: "Desain Komunikasi Visual",
+                        area: 7
+                    },
+                    {
+                        country: "Desain Produk",
+                        area: 6
+                    },
+                    {
+                        country: "Fashion",
+                        area: 5
+                    },
+                    {
+                        country: "Film, Animasi dan Video",
+                        area: 2
+                    },
+                    {
+                        country: "Fotografi",
+                        area: 55
+                    }
+];
+
+                $("#chartContainer").dxPieChart({
+                    size: {
+                        width: 750
+                    },
+                    dataSource: dataSource,
+                    series: [
+                        {
+                            argumentField: "country",
+                            valueField: "area",
+                            label: {
+                                visible: true,
+                                connector: {
+                                    visible: true,
+                                    width: 1
+                                }
+                            }
+        }
+    ],
+                    title: "Area of Countries"
+                });
+            }
+
+        );
+    </script>
+    <nav class="navbar navbar-blue">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
                     <!-- <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span> -->
                     <span><i class="fa fa-ellipsis-h fa-2x"></i></span>
-                    </button>
-                    <a class="navbar-brand" href="#">
-                        <div class="header-logo">
-                            <img src="assets/img/mcf-logo.svg" alt="">
+                </button>
+                <a class="navbar-brand" href="#">
+                    <div class="header-logo">
+                        <img src="assets/img/mcf-logo.svg" alt="">
+                    </div>
+                </a>
+                <a href="#" class="navbar-brand-mini">
+                    <img src="assets/img/mcf-logo-white-notext.svg" alt="">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="main-menu">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#" class="home-tabs"><i class="icon icon-home-house-streamline icon-2x home-icon"></i><span class="home-text">home</span></a></li>
+                    <li><a href="#">mbois festival</a></li>
+                    <li><a href="#">direktori</a></li>
+                    <li><a href="#">kolaborasi</a></li>
+                    <li>
+                        <p class="separator"></p>
+                    </li>
+                    <li class="sign-up">
+                        <a href="#" class="trigger" data-placement="bottom" data-toggle="popover"><img src="assets/img/Icon_Register.svg" class="navbar-img"> daftar</a>
+                        <!-- <a href="#" class="trigger" data-placement="bottom"><strong>daftar</strong></a> -->
+                        <div class="content hide">
+                            <a href="#" title="Daftar dengan Facebook" class="btn btn-block btn-social-facebook">Daftar dengan facebook</a>
+                            <p>Atau</p>
+                            <a href="#" title="Google Form" class="btn btn-block btn-social-google-form">Google Form</a>
                         </div>
-                    </a>
-                    <a href="#" class="navbar-brand-mini">
-                        <img src="assets/img/mcf-logo-white-notext.svg" alt="">
-                    </a>
-                </div>
-                <div class="collapse navbar-collapse" id="main-menu">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#" class="home-tabs"><i class="icon icon-home-house-streamline icon-2x home-icon"></i><span class="home-text">home</span></a></li>
-                        <li><a href="#">mbois festival</a></li>
-                        <li><a href="#">direktori</a></li>
-                        <li><a href="#">kolaborasi</a></li>
-                        <li>
-                            <p class="separator"></p>
-                        </li>
-                        <li class="sign-up">
-                            <a href="#" class="trigger" data-placement="bottom" data-toggle="popover"><img src="assets/img/Icon_Register.svg" class="navbar-img"> daftar</a>
-                            <!-- <a href="#" class="trigger" data-placement="bottom"><strong>daftar</strong></a> -->
-                            <div class="content hide">
-                                <a href="#" title="Daftar dengan Facebook" class="btn btn-block btn-social-facebook">Daftar dengan facebook</a>
-                                <p>Atau</p>
-                                <a href="#" title="Google Form" class="btn btn-block btn-social-google-form">Google Form</a>
-                            </div>
-                        </li>
-                        <!-- <li><a href="#"><strong>daftar</strong></a></li> -->
-                        <li class="sign-in">
-                            <a href="#" class="trigger" data-placement="bottom" data-toggle="popover"><img src="assets/img/Icon_Login.svg" class="navbar-img"> masuk</a>
-                            <div class="content hide login-instantiate">
-                                <form action="" method="post">
-                                    <div class="form-group">
-                                        <input type="text" name="email" placeholder="E-mail/Username" class="form-control">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="password" name="password" placeholder="Password" class="form-control">
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="row">
-                                            <div class="col-xs-4">
-                                                <input type="submit" name="submit-login" value="masuk" class="btn btn-primary form-control btn-submit">
-                                            </div>
-                                            <div class="col-xs-8">
-                                                <span class="pull-right forgot-password">
+                    </li>
+                    <!-- <li><a href="#"><strong>daftar</strong></a></li> -->
+                    <li class="sign-in">
+                        <a href="#" class="trigger" data-placement="bottom" data-toggle="popover"><img src="assets/img/Icon_Login.svg" class="navbar-img"> masuk</a>
+                        <div class="content hide login-instantiate">
+                            <form action="" method="post">
+                                <div class="form-group">
+                                    <input type="text" name="email" placeholder="E-mail/Username" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" name="password" placeholder="Password" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <input type="submit" name="submit-login" value="masuk" class="btn btn-primary form-control btn-submit">
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <span class="pull-right forgot-password">
                                                     <a href="#" class="lupa-password">Lupa Kata Sandi ?</a>
                                                 </span>
-                                            </div>
                                         </div>
                                     </div>
-                                </form>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="subsektor">
+        <div class="container">
+            <div class="chart">
+                <div class="row">
+                    <!--
+                    <div class="col-md-4">
+                        <div class="chart-legend">
+                            <p class="legend-1">
+                                <span class="chart-percentage">
+                                    15%
+                                </span> Aplikasi dan pengembangan game
+                            </p>
+                            <p class="legend-2">
+                                <span class="chart-percentage">
+                                    20%
+                                </span> arsitektur
+                            </p>
+                            <p class="legend-3">
+                                <span class="chart-percentage">
+                                    12%
+                                </span> Desain interior
+                            </p>
+                            <p class="legend-4">
+                                <span class="chart-percentage">
+                                    7%
+                                </span> Desain komunikasi visual
+                            </p>
+                            <p class="legend-5">
+                                <span class="chart-percentage">
+                                    8%
+                                </span> desain produk
+                            </p>
+                            <p class="legend-6">
+                                <span class="chart-percentage">
+                                    15%
+                                </span> fashion
+                            </p>
+                            <p class="legend-7">
+                                <span class="chart-percentage">
+                                    15%
+                                </span> film, animasi dan video
+                            </p>
+                            <p class="legend-8">
+                                <span class="chart-percentage">
+                                    9%
+                                </span> fotografi
+                            </p>
+                            <p class="legend-9">
+                                <span class="chart-percentage">
+                                    10%
+                                </span> kriya
+                            </p>
+                            <p class="legend-10">
+                                <span class="chart-percentage">
+                                    15%
+                                </span> kuliner
+                            </p>
+                            <p class="legend-11">
+                                <span class="chart-percentage">
+                                    15%
+                                </span> musik
+                            </p>
+                            <p class="legend-12">
+                                <span class="chart-percentage">
+                                    15%
+                                </span> penerbitan
+                            </p>
+                            <p class="legend-13">
+                                <span class="chart-percentage">
+                                    15%
+                                </span> periklanan
+                            </p>
+                            <p class="legend-14">
+                                <span class="chart-percentage">
+                                    15%
+                                </span> seni pertunjukkan
+                            </p>
+                            <p class="legend-15">
+                                <span class="chart-percentage">
+                                    15%
+                                </span> seni rupa
+                            </p>
+                            <p class="legend-16">
+                                <span class="chart-percentage">
+                                    15%
+                                </span> televisi &amp; radio
+                            </p>
+                        </div>
+                    </div>
+-->
+
+                    <div class="col-md-2">
+                        &nbsp;
+                    </div>
+
+                    <div class="col-md-8">
+                        <div id="chartContainer" style="width: 100%; height: 660px;"></div>
+                    </div>
+
+                    <div class="col-md-2">
+                        &nbsp;
+                    </div>
+
+                </div>
+            </div>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <div class="title-separator">
+                <span class="first-title">
+                        Produk Unggulan
+                    </span>
+            </div>
+            <div class="subsektor-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="subsektor-container">
+                                <img src="assets/img/symbol/gamecontroller.png" alt="" class="img-responsive">
+                                <h4>Aplikasi dan Pengembangan Game</h4>
                             </div>
-                        </li>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="subsektor-container">
+                                <img src="assets/img/symbol/keyboard.png" alt="" class="img-responsive">
+                                <h4>Arsitektur</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="subsektor-container">
+                                <img src="assets/img/symbol/paintcan.png" alt="" class="img-responsive">
+                                <h4>Desain Interior</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="subsektor-container">
+                                <img src="assets/img/symbol/paintbrush2.png" alt="" class="img-responsive">
+                                <h4>Desain Komunikasi Visual</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="subsektor-container">
+                                <img src="assets/img/symbol/paintroller.png" alt="" class="img-responsive">
+                                <h4>Desain Produk</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="subsektor-container">
+                                <img src="assets/img/symbol/fashion.png" alt="" class="img-responsive">
+                                <h4>Fashion</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="subsektor-container">
+                                <img src="assets/img/symbol/filmreel.png" alt="" class="img-responsive">
+                                <h4>Film, Animasi dan Video</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="subsektor-container">
+                                <img src="assets/img/symbol/slr.png" alt="" class="img-responsive">
+                                <h4>Fotografi</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="subsektor-container">
+                                <img src="assets/img/symbol/flower.png" alt="" class="img-responsive">
+                                <h4>Kriya</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="subsektor-container">
+                                <img src="assets/img/symbol/water.png" alt="" class="img-responsive">
+                                <h4>Kuliner</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="subsektor-container">
+                                <img src="assets/img/symbol/music.png" alt="" class="img-responsive">
+                                <h4>Musik</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="subsektor-container">
+                                <img src="assets/img/symbol/news.png" alt="" class="img-responsive">
+                                <h4>Penerbitan</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="subsektor-container">
+                                <img src="assets/img/symbol/megaphone2.png" alt="" class="img-responsive">
+                                <h4>Periklanan</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="subsektor-container">
+                                <img src="assets/img/symbol/running.png" alt="" class="img-responsive">
+                                <h4>Seni Pertunjukkan</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="subsektor-container">
+                                <img src="assets/img/symbol/art.png" alt="" class="img-responsive">
+                                <h4>Seni Rupa</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="subsektor-container">
+                                <img src="assets/img/symbol/clapboard.png" alt="" class="img-responsive">
+                                <h4>Televisi &amp; Radio</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="content-about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <img src="assets/img/mcf-logo-white.png" alt="MCF Logo" width="105">
+                </div>
+                <div class="col-md-2">
+                    <ul class="about-1">
+                        <li><a href="#">Tentang MCF</a></li>
+                        <!-- <li>Tentang MCF</li> -->
+                        <li><a href="#">Visi</a></li>
+                        <li><a href="#">Misi</a></li>
+                        <li><a href="#">Tujuan</a></li>
+                        <li><a href="#">Program</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="about-2">
+                        <li><a href="#">Direktori Industri Kreatif Kota Malang</a></li>
+                        <li><a href="#">Subsektor Industri Kreatif</a></li>
+                        <li><a href="#">Galery</a></li>
+                        <li><a href="#">Event</a></li>
+                        <li><a href="#">Forum Kolaborasi</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="social-media">
+                        <li><a href="#" class="btn-social"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" class="btn-social"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" class="btn-social"><i class="fa fa-envelope"></i></a></li>
                     </ul>
                 </div>
             </div>
-        </nav>
-		<section id="subsektor">
-			<div class="container">
-				<p class="first-title">Produk Unggulan</p>
-				<div class="subsektor-content">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-3">
-								<div class="subsektor-container">
-									<img src="assets/img/symbol/gamecontroller.png" alt="" class="img-responsive">
-									<h4>Aplikasi dan Pengembangan Game</h4>
-								</div>
-							</div>
-							<div class="col-md-3">
-								<div class="subsektor-container">
-									<img src="assets/img/symbol/keyboard.png" alt="" class="img-responsive">
-									<h4>Arsitektur</h4>
-								</div>
-							</div>
-							<div class="col-md-3">
-								<div class="subsektor-container">
-									<img src="assets/img/symbol/paintcan.png" alt="" class="img-responsive">
-									<h4>Desain Interior</h4>
-								</div>
-							</div>
-							<div class="col-md-3">
-								<div class="subsektor-container">
-									<img src="assets/img/symbol/paintbrush2.png" alt="" class="img-responsive">
-									<h4>Desain Komunikasi Visual</h4>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<div class="subsektor-container">
-									<img src="assets/img/symbol/paintroller.png" alt="" class="img-responsive">
-									<h4>Desain Produk</h4>
-								</div>
-							</div>
-							<div class="col-md-3">
-								<div class="subsektor-container">
-									<img src="assets/img/symbol/fashion.png" alt="" class="img-responsive">
-									<h4>Fashion</h4>
-								</div>
-							</div>
-							<div class="col-md-3">
-								<div class="subsektor-container">
-									<img src="assets/img/symbol/filmreel.png" alt="" class="img-responsive">
-									<h4>Film, Animasi dan Video</h4>
-								</div>
-							</div>
-							<div class="col-md-3">
-								<div class="subsektor-container">
-									<img src="assets/img/symbol/slr.png" alt="" class="img-responsive">
-									<h4>Fotografi</h4>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<div class="subsektor-container">
-									<img src="assets/img/symbol/flower.png" alt="" class="img-responsive">
-									<h4>Kriya</h4>
-								</div>
-							</div>
-							<div class="col-md-3">
-								<div class="subsektor-container">
-									<img src="assets/img/symbol/water.png" alt="" class="img-responsive">
-									<h4>Kuliner</h4>
-								</div>
-							</div>
-							<div class="col-md-3">
-								<div class="subsektor-container">
-									<img src="assets/img/symbol/music.png" alt="" class="img-responsive">
-									<h4>Musik</h4>
-								</div>
-							</div>
-							<div class="col-md-3">
-								<div class="subsektor-container">
-									<img src="assets/img/symbol/news.png" alt="" class="img-responsive">
-									<h4>Penerbitan</h4>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<div class="subsektor-container">
-									<img src="assets/img/symbol/megaphone2.png" alt="" class="img-responsive">
-									<h4>Periklanan</h4>
-								</div>
-							</div>
-							<div class="col-md-3">
-								<div class="subsektor-container">
-									<img src="assets/img/symbol/running.png" alt="" class="img-responsive">
-									<h4>Seni Pertunjukkan</h4>
-								</div>
-							</div>
-							<div class="col-md-3">
-								<div class="subsektor-container">
-									<img src="assets/img/symbol/art.png" alt="" class="img-responsive">
-									<h4>Seni Rupa</h4>
-								</div>
-							</div>
-							<div class="col-md-3">
-								<div class="subsektor-container">
-									<img src="assets/img/symbol/clapboard.png" alt="" class="img-responsive">
-									<h4>Televisi &amp; Radio</h4>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="content-about">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-2">
-						<img src="assets/img/mcf-logo-white.png" alt="MCF Logo" width="105">
-					</div>
-					<div class="col-md-2">
-						<ul class="about-1">
-							<li><a href="#">Tentang MCF</a></li>
-							<!-- <li>Tentang MCF</li> -->
-							<li><a href="#">Visi</a></li>
-							<li><a href="#">Misi</a></li>
-							<li><a href="#">Tujuan</a></li>
-							<li><a href="#">Program</a></li>
-						</ul>
-					</div>
-					<div class="col-md-4">
-						<ul class="about-2">
-							<li><a href="#">Direktori Industri Kreatif Kota Malang</a></li>
-							<li><a href="#">Subsektor Industri Kreatif</a></li>
-							<li><a href="#">Galery</a></li>
-							<li><a href="#">Event</a></li>
-							<li><a href="#">Forum Kolaborasi</a></li>
-						</ul>
-					</div>
-					<div class="col-md-4">
-						<ul class="social-media">
-							<li><a href="#" class="btn-social"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#" class="btn-social"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#" class="btn-social"><i class="fa fa-envelope"></i></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="license">
-			<h3>&copy; MCF - Malang Creative Fusion. All rights reserved.</h3>
-		</section>
-		<script type=text/javascript src="assets/js/jquery-3.1.1.min.js"></script>
-		<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="assets/js/global.js"></script>
-	</body>
+        </div>
+    </section>
+    <section id="license">
+        <h3>&copy; MCF - Malang Creative Fusion. All rights reserved.</h3>
+    </section>
+</body>
+
 </html>

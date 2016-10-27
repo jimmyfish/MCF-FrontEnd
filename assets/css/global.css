@@ -230,7 +230,7 @@ ul.nav li.active > a {
 }
 
 #subsektor {
-    padding-top: 50px;
+    padding-top: 100px;
     background-color: #fafafa;
     height: auto;
     padding-bottom: 150px;
@@ -642,19 +642,19 @@ hr {
 }
 
 .multi-item-carousel .carousel-inner .active.left {
-    left: -33%;
+    left: -25%;
 }
 
 .multi-item-carousel .carousel-inner .active.right {
-    left: 33%;
+    left: 25%;
 }
 
 .multi-item-carousel .carousel-inner .next {
-    left: 33%;
+    left: 25%;
 }
 
 .multi-item-carousel .carousel-inner .prev {
-    left: -33%;
+    left: -25%;
 }
 
 @media all and (transform-3d),
@@ -1196,6 +1196,95 @@ p.inner-desc {
 
 .subsektor-content .row:not(:first-child) {
     margin-top: 50px;
+}
+
+[class^="legend-"],
+[class*=" legend-"] {
+    text-transform: capitalize;
+    display: inline-block;
+    width: 100%;
+}
+
+[class^="legend-"]:before,
+[class*=" legend-"]:before {
+    content: " ";
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.chart-percentage {
+    width: 20px;
+    text-align: right;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.legend-1:before {
+    background-color: #1abc9c;
+}
+
+.legend-2:before {
+    background-color: #16a085;
+}
+
+.legend-3:before {
+    background-color: #f1c40f;
+}
+
+.legend-4:before {
+    background-color: #f39c12;
+}
+
+.legend-5:before {
+    background-color: #2ecc71;
+}
+
+.legend-6:before {
+    background-color: #27ae60;
+}
+
+.legend-7:before {
+    background-color: #e67e22;
+}
+
+.legend-8:before {
+    background-color: #d35400;
+}
+
+.legend-9:before {
+    background-color: #3498db;
+}
+
+.legend-10:before {
+    background-color: #2980b9;
+}
+
+.legend-11:before {
+    background-color: #e74c3c;
+}
+
+.legend-12:before {
+    background-color: #c0392b;
+}
+
+.legend-13:before {
+    background-color: #9b59b6;
+}
+
+.legend-14:before {
+    background-color: #8e44ad;
+}
+
+.legend-15:before {
+    background-color: #34495e;
+}
+
+.legend-16:before {
+    background-color: #bdc3c7;
 }
 
 
