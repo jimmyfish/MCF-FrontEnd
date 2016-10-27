@@ -100,6 +100,16 @@ $(function () {
         midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
     });
 
+    $('.popup-youtube').magnificPopup({
+        disableOn: 700,
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+
+        fixedContentPos: false
+    });
+
 
 
 }); // END OF FUNCTION JQUERY

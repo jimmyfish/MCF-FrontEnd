@@ -150,6 +150,12 @@
         height: 40px;
         border-radius: 2px;
     }
+    .center-responsive img {
+        text-align: center;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media (min-width:992px) {
@@ -159,7 +165,8 @@
     #forum-kolaborasi .container,
     #detail-berita .container,
     #galery .container,
-    #detail-gallery .container {
+    #detail-gallery .container,
+    #profil-pelaku .container {
         width: 1060px;
     }
     .forum-populer-left .reputation-title {
@@ -170,5 +177,9 @@
     }
     #forum-kolaborasi .list-forum-content .col-md-6 {
         width: 45.6%;
+    }
+    .title-upper {
+        margin-left: 150px;
+        text-align: left;
     }
 }

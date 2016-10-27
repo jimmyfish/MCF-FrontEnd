@@ -273,6 +273,13 @@ ul.nav li.active > a {
     height: auto;
 }
 
+#profil-pelaku {
+    background-color: #fafafa;
+    padding-bottom: 150px;
+    padding-top: 20px;
+    height: auto;
+}
+
 
 /*-- SECTION TENTANG MCF --*/
 
@@ -1642,6 +1649,10 @@ ul.forum-count li .fa {
     margin-bottom: 10px;
 }
 
+.mt10 {
+    margin-top: 10px;
+}
+
 .form-terbitkan input[type="text"] {
     padding: 10px 10px;
     height: 40px;
@@ -1852,4 +1863,154 @@ span.input-file-span {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+}
+
+
+/*---------------------------------------------------------
+            DIREKTORI CSS SETTINGS
+---------------------------------------------------------*/
+
+.title-upper {
+    color: #28b6f6;
+    font-size: 1.1em;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.profil-pelaku-nama {
+    font-size: 1.9em;
+    color: #666;
+    font-weight: 700;
+}
+
+.profil-pelaku-contact-email .fa,
+.profil-pelaku-contact-website .fa,
+.profil-pelaku-contact-number .fa {
+    color: #28b6f6;
+    margin-right: 20px;
+}
+
+.profil-pelaku-contact-email:not(.fa),
+.profil-pelaku-contact-website:not(.fa),
+.profil-pelaku-contact-number:not(.fa) {
+    color: #666;
+    font-size: 1.1em;
+}
+
+.profil-wrapper-1 {
+    margin-top: 50px;
+    padding: 20px 25px;
+    background-color: #fff;
+    box-shadow: 0 0 15px #ccc;
+}
+
+.profil-wrapper-2 {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 20px 25px;
+    background-color: #fff;
+    box-shadow: 0 0 15px #ccc;
+}
+
+.profil-wrapper-1-main-content {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+.profil-wrapper-1-date {
+    color: #999;
+    font-weight: 300;
+}
+
+.profil-wrapper-2-main-content {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+.profil-wrapper-2-date {
+    color: #999;
+    font-weight: 300;
+}
+
+.btn-profil-pelaku-blue {
+    background-color: #28b6f6;
+    color: #fff;
+    text-transform: uppercase;
+    width: 42%;
+    font-size: 1.1em;
+    margin: 0 10px;
+    font-weight: 700;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    border-radius: 2px;
+}
+
+.btn-profil-pelaku-blue:hover {
+    background-color: #f39c12;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.btn-profil-pelaku-orange {
+    border-radius: 2px;
+    background-color: #f39c12;
+    color: #fff;
+    text-transform: uppercase;
+    width: 42%;
+    font-size: 1.1em;
+    font-weight: 700;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.btn-profil-pelaku-orange:hover {
+    background-color: #28b6f6;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.btn-profil-pelaku-approval {
+    border-radius: 2px;
+    background-color: #1abc9c;
+    color: #fff;
+    text-transform: uppercase;
+    width: 90%;
+    font-size: 1.1em;
+    font-weight: 700;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.btn-profil-pelaku-approval[disabled] {
+    background-color: #bdc3c7;
+    color: #000;
+}
+
+.btn-profil-pelaku-approval:hover {
+    background-color: #9b59b6;
+    color: #fff;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.profil-pelaku-gambar-container img {
+    width: 100%;
+    height: 200px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.lbl-profil-pelaku-video {
+    position: absolute;
+    color: #fff;
+    width: 100%;
+    height: 200px;
+    margin-top: 80px;
+}
+
+.btn-btm-subsektor .btn {
+    font-size: 1.5em;
+    padding: 10px 0;
 }
