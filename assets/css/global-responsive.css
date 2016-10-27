@@ -166,7 +166,8 @@
     #detail-berita .container,
     #galery .container,
     #detail-gallery .container,
-    #profil-pelaku .container {
+    #profil-pelaku .container,
+    #detail-subsektor .container {
         width: 1060px;
     }
     .forum-populer-left .reputation-title {

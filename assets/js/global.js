@@ -36,16 +36,17 @@ $(function () {
     // Do the same for the next, next item.
     $('.multi-item-carousel .item').each(function () {
         var next = $(this).next();
-        var previous = $(this).prev();
         if (!next.length) {
             next = $(this).siblings(':first');
         }
         next.children(':first-child').clone().appendTo($(this));
+        for (var i = 0; i < 2; i++) {
+            next = next.next();
+            if (!next.length) {
+                next = $(this).siblings(':first');
+            }
 
-        if (next.next().length > 0) {
-            next.next().children(':first-child').clone().appendTo($(this));
-        } else {
-            $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+            next.children(':first-child').clone().appendTo($(this));
         }
     });
 

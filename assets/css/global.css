@@ -575,7 +575,7 @@ hr {
     text-transform: uppercase;
     color: #fff;
     font-size: 1.2em;
-    font-weight: 600;
+    /*    font-weight: 300;*/
     border-bottom: 6px solid #28b6f6;
     border-radius: 0;
 }
@@ -681,12 +681,15 @@ hr {
 
 .multi-item-carousel .item .inner-content img {
     width: 100%;
-    min-height: 235px;
-    max-height: 235px;
+    min-height: 240px;
+    max-height: 240px;
+    -o-object-fit: cover;
+    object-fit: cover;
 }
 
 .multi-item-carousel .item .inner-content h3 {
     padding-left: 15px;
+    padding-right: 15px;
     padding-bottom: 15px;
     font-weight: 600;
     color: #444;
@@ -1231,18 +1234,13 @@ p.inner-desc {
 }
 
 #detail-subsektor .second-carousel .inner-content {
-    margin-left: 25px;
-    margin-right: 25px;
-}
-
-#detail-subsektor .second-carousel .inner-content {
     overflow: hidden;
 }
 
 #detail-subsektor .second-carousel .inner-content h3 {
     font-size: 24px;
     text-align: center;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 
