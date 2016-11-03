@@ -123,6 +123,7 @@ function readURL(input) {
             $('#img-thumb')
                 .attr('src', e.target.result)
                 .width(250)
+                .css('object-fit', 'cover')
                 .height(250);
             //            console.log(e.target.result);
         };
