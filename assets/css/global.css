@@ -291,6 +291,13 @@ ul.nav li.active > a {
     height: auto;
 }
 
+#semua-pelaku {
+    background-color: #fafafa;
+    padding-bottom: 100px;
+    padding-top: 50px;
+    height: auto;
+}
+
 
 /*-- SECTION TENTANG MCF --*/
 
@@ -2179,4 +2186,72 @@ span.input-file-span {
 .btn-btm-subsektor .btn {
     font-size: 1.5em;
     padding: 10px 0;
+}
+
+
+/*----------------------------------------------
+        SEMUA PELAKU CSS SETTING
+----------------------------------------------*/
+
+#semua-pelaku .semua-pelaku-container {
+    background-color: #fff;
+    box-shadow: 0 0 15px #ddd;
+}
+
+#semua-pelaku .col-md-6 {
+    margin-bottom: 25px;
+}
+
+#semua-pelaku .semua-pelaku-image {
+    max-height: 120px;
+    max-width: 120px;
+    height: 120px;
+    width: 120px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+#semua-pelaku .semua-pelaku-right {
+    padding: 15px 25px;
+}
+
+#semua-pelaku .semua-pelaku-nama {
+    font-size: 1.3em;
+    color: #333;
+}
+
+#semua-pelaku .semua-pelaku-email,
+#semua-pelaku .semua-pelaku-nomor {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 0;
+    text-transform: lowercase;
+}
+
+#semua-pelaku .semua-pelaku-btn-bottom {
+    margin-left: 50px;
+}
+
+#semua-pelaku .semua-pelaku-btn-bottom button {
+    border: none;
+    background-color: #fafafa;
+}
+
+#semua-pelaku .semua-pelaku-btn-bottom button a {
+    color: #333;
+}
+
+#semua-pelaku .semua-pelaku-btn-bottom button[disabled] a {
+    color: #999;
+}
+
+#semua-pelaku .semua-pelaku-btn-bottom button[disabled] {
+    cursor: not-allowed;
+}
+
+#semua-pelaku .semua-pelaku-page-count {
+    font-size: 1.5em;
+    margin-left: 25px;
+    margin-right: 25px;
+    color: #444;
 }
