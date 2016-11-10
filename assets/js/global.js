@@ -70,6 +70,10 @@ $(function () {
         }
     });
 
+    $('li>a.trigger.allready-login').click(function () {
+        $('.popover').addClass('login-popover');
+    });
+
     $('body').on('click', function (e) {
         $('[data-toggle="popover"]').each(function () {
             if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {

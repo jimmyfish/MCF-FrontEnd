@@ -99,7 +99,7 @@
         min-width: 340px;
     }
     li.sign-up .popover-content {
-        padding: 30px 20px;
+        /*        padding: 30px 20px;*/
     }
     li.sign-in .popover-content {
         padding: 20px 20px 5px 20px;

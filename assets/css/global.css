@@ -705,7 +705,7 @@ hr {
 .btn-purple {
     background-color: #f8931f;
     text-transform: uppercase;
-    border-radius: 3px;
+    border-radius: 2px;
     color: #fff;
     -webkit-transition: all .4s ease;
     transition: all .4s ease;
@@ -731,6 +731,7 @@ hr {
     border-radius: 3px;
     padding: 5px 20px;
     font-size: 16px;
+    border-radius: 2px;
 }
 
 .btn-grey:hover {
@@ -1032,6 +1033,8 @@ ul.social-media li > a {
     padding: 5px;
     background-color: #fafafa;
     min-width: 350px;
+    border-bottom: 7px solid #28B6F6;
+    min-width: 220px;
 }
 
 .popover p {
@@ -1045,6 +1048,28 @@ ul.social-media li > a {
 
 .popover .btn:not(:first-child) {
     margin-top: 10px;
+}
+
+.popover-content {
+    margin-top: 15px;
+}
+
+.popover.bottom > .arrow {
+    border: 0;
+}
+
+.popover.bottom {
+    margin-top: 0;
+}
+
+.login-popover {
+    min-width: 220px !important;
+    width: 50px;
+    left: -100px !important;
+}
+
+.login-popover .arrow {
+    left: 70% !important;
 }
 
 .home-text {
@@ -1071,16 +1096,8 @@ span.forgot-password a {
     transition: all .3s ease-in;
 }
 
-.popover.bottom > .arrow {
-    border: 0;
-}
-
-.popover.bottom {
-    margin-top: 0;
-}
-
 .btn-social-facebook {
-    background-color: #3949ab;
+    background-color: #0277bd;
     color: #fff;
     text-transform: uppercase;
     border-radius: 2px;
@@ -1090,6 +1107,37 @@ span.forgot-password a {
 
 .btn-social-facebook:hover {
     background-color: #00ffff;
+    -webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+
+.btn-sunting {
+    background-color: #e67e22;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 2px;
+    -webkit-transition: all .4s ease-in;
+    transition: all .4s ease-in;
+    margin-bottom: 15px;
+}
+
+.btn-sunting:hover {
+    background-color: #d35400;
+    -webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+
+.btn-logout {
+    background-color: #3498db;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 2px;
+    -webkit-transition: all .4s ease-in;
+    transition: all .4s ease-in;
+}
+
+.btn-logout:hover {
+    background-color: #2980b9;
     -webkit-transition: all .3s ease-in;
     transition: all .3s ease-in;
 }
