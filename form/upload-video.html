@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Welcome - Malang Creative Fusion</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../assets/fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/global.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/form.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/global-responsive.css">
+    <link rel="icon" type="icon" href="../assets/img/mcf-logo.png">
+</head>
+
+<body>
+    <nav class="navbar navbar-blue">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
+                    <!-- <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> -->
+                    <span><i class="fa fa-ellipsis-h fa-2x"></i></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <div class="header-logo">
+                        <img src="../assets/img/mcf-logo.svg" alt="">
+                    </div>
+                </a>
+                <a href="#" class="navbar-brand-mini">
+                    <img src="../assets/img/mcf-logo-white-notext.svg" alt="">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="main-menu">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#" class="home-tabs"><i class="icon icon-home-house-streamline icon-2x home-icon"></i><span class="home-text">home</span></a></li>
+                    <li><a href="#">mbois festival</a></li>
+                    <li><a href="#">direktori</a></li>
+                    <li><a href="#">kolaborasi</a></li>
+                    <li>
+                        <p class="separator"></p>
+                    </li>
+                    <li class="sign-up">
+                        <a href="#" class="trigger" data-placement="bottom" data-toggle="popover"><img src="../assets/img/Icon_Register.svg" class="navbar-img"> daftar</a>
+                        <!-- <a href="#" class="trigger" data-placement="bottom"><strong>daftar</strong></a> -->
+                        <div class="content hide">
+                            <a href="#" title="Daftar dengan Facebook" class="btn btn-block btn-sunting">daftar sekarang!</a>
+                            <a href="#" title="Daftar dengan Facebook" class="btn btn-block btn-social-facebook"><i class="fa fa-fw fa-facebook" style="text-align:left;"></i> Daftar dengan facebook</a>
+                        </div>
+                    </li>
+                    <!-- <li><a href="#"><strong>daftar</strong></a></li> -->
+                    <li class="sign-in">
+                        <a href="#" class="trigger" data-placement="bottom" data-toggle="popover"><img src="../assets/img/Icon_Login.svg" class="navbar-img"> masuk</a>
+                        <div class="content hide login-instantiate">
+                            <form action="" method="post">
+                                <div class="form-group">
+                                    <input type="text" name="email" placeholder="E-mail/Username" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" name="password" placeholder="Password" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <input type="submit" name="submit-login" value="masuk" class="btn btn-primary form-control btn-submit">
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <span class="pull-right forgot-password">
+                                                    <a href="#" class="lupa-password">Lupa Kata Sandi ?</a>
+                                                </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="form-upload-video">
+        <div class="container">
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <center>
+                <div class="upper-title">
+                    <span class="first-title">
+                            UPLOAD VIDEO
+                        </span>
+                </div>
+            </center>
+            <p>&nbsp;</p>
+            <form method="post" action="">
+                <div class="row">
+                    <div class="col-md-2">
+                        &nbsp;
+                    </div>
+                    <div class="col-md-2">
+                        <div class="img-sample">
+                            <img src="../assets/img/cloud.png" id="img-thumb" height="150" class="img-responsive" align="center">
+
+                            <input type="file" accept="video/*" name="img-image" id="img-image" onchange="readURLvideo(this);" class="hide">
+                        </div>
+                        <label for="img-image" class="label-img">
+                            Ganti Video
+                        </label>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <textarea class="upload-video-description"></textarea>
+                            <p style="margin-top:5px;">
+                                <a href="http://www.youtube.com/watch?v=0O2aH4XLbto" class="btn btn-purple popup-youtube" id="video-link">
+                                    <i class="fa fa-play"></i> Putar Video
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        &nbsp;
+                    </div>
+                    <div class="col-md-2">
+                        <div class="img-sample">
+                            <img src="../assets/img/cloud.png" id="img-thumb" height="150" class="img-responsive" align="center">
+
+                            <input type="file" accept="video/*" name="img-image" id="img-image" onchange="readURLvideo(this);" class="hide">
+                        </div>
+                        <label for="img-image" class="label-img">
+                            Ganti Video
+                        </label>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <textarea class="upload-video-description"></textarea>
+                            <p style="margin-top:5px;">
+                                <a href="http://www.youtube.com/watch?v=0O2aH4XLbto" class="btn btn-purple popup-youtube" id="video-link">
+                                    <i class="fa fa-play"></i> Putar Video
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        &nbsp;
+                    </div>
+                    <div class="col-md-2">
+                        <div class="img-sample">
+                            <img src="../assets/img/cloud.png" id="img-thumb" height="150" class="img-responsive" align="center">
+
+                            <input type="file" accept="video/*" name="img-image" id="img-image" onchange="readURLvideo(this);" class="hide">
+                        </div>
+                        <label for="img-image" class="label-img">
+                            Ganti Video
+                        </label>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <textarea class="upload-video-description"></textarea>
+                            <p style="margin-top:5px;">
+                                <a href="http://www.youtube.com/watch?v=0O2aH4XLbto" class="btn btn-purple popup-youtube" id="video-link">
+                                    <i class="fa fa-play"></i> Putar Video
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        &nbsp;
+                    </div>
+                    <div class="col-md-2">
+                        <div class="img-sample">
+                            <img src="../assets/img/cloud.png" id="img-thumb" height="150" class="img-responsive" align="center">
+
+                            <input type="file" accept="video/*" name="img-image" id="img-image" onchange="readURLvideo(this);" class="hide">
+                        </div>
+                        <label for="img-image" class="label-img">
+                            Ganti Video
+                        </label>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <textarea class="upload-video-description"></textarea>
+                            <p style="margin-top:5px;">
+                                <a href="http://www.youtube.com/watch?v=0O2aH4XLbto" class="btn btn-purple popup-youtube" id="video-link">
+                                    <i class="fa fa-play"></i> Putar Video
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        &nbsp;
+                    </div>
+                    <div class="col-md-2">
+                        <div class="img-sample">
+                            <img src="../assets/img/cloud.png" id="img-thumb" height="150" class="img-responsive" align="center">
+
+                            <input type="file" accept="video/*" name="img-image" id="img-image" onchange="readURLvideo(this);" class="hide">
+                        </div>
+                        <label for="img-image" class="label-img">
+                            Ganti Video
+                        </label>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <textarea class="upload-video-description"></textarea>
+                            <p style="margin-top:5px;">
+                                <a href="http://www.youtube.com/watch?v=0O2aH4XLbto" class="btn btn-purple popup-youtube" id="video-link">
+                                    <i class="fa fa-play"></i> Putar Video
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        &nbsp;
+                    </div>
+                    <div class="col-md-2">
+                        <a href="#" class="btn btn-blue btn-block">Kembali</a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="#" class="btn btn-purple">simpan perubahan</a>
+                    </div>
+                    <div class="col-md-2">
+                        &nbsp;
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="content-about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <img src="../assets/img/mcf-logo-white.png" alt="MCF Logo" width="105">
+                </div>
+                <div class="col-md-2">
+                    <ul class="about-1">
+                        <li><a href="#">Tentang MCF</a></li>
+                        <!-- <li>Tentang MCF</li> -->
+                        <li><a href="#">Visi</a></li>
+                        <li><a href="#">Misi</a></li>
+                        <li><a href="#">Tujuan</a></li>
+                        <li><a href="#">Program</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="about-2">
+                        <li><a href="#">Direktori Industri Kreatif Kota Malang</a></li>
+                        <li><a href="#">Subsektor Industri Kreatif</a></li>
+                        <li><a href="#">Galery</a></li>
+                        <li><a href="#">Event</a></li>
+                        <li><a href="#">Forum Kolaborasi</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="social-media">
+                        <li><a href="#" class="btn-social"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" class="btn-social"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" class="btn-social"><i class="fa fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="license">
+        <h3>&copy; MCF - Malang Creative Fusion. All rights reserved.</h3>
+    </section>
+    <script type=text/javascript src="../assets/js/jquery-3.1.1.min.js"></script>
+    <script type=text/javascript src="../assets/js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="../assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="../assets/js/global.js"></script>
+</body>
+
+</html>

@@ -110,6 +110,15 @@ $(function () {
         closeOnContentClick: true,
         midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
     });
+    $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+        disableOn: 700,
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+
+        fixedContentPos: false
+    });
 
     $('.popup-youtube').magnificPopup({
         disableOn: 700,
@@ -135,7 +144,6 @@ function readURL(input) {
                 .width(250)
                 .css('object-fit', 'cover')
                 .height(250);
-            //            console.log(e.target.result);
         };
 
         reader.readAsDataURL(input.files[0]);

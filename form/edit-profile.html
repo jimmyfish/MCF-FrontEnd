@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Welcome - Malang Creative Fusion</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../assets/fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/global.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/global-responsive.css">
+    <link rel="stylesheet" href="../assets/css/form.css">
+    <link rel="icon" type="icon" href="../assets/img/mcf-logo.png">
+</head>
+
+<body>
+    <nav class="navbar navbar-blue">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
+                    <!-- <span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span> -->
+                    <span><i class="fa fa-ellipsis-h fa-2x"></i></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <div class="header-logo">
+                        <img src="../assets/img/mcf-logo.svg" alt="">
+                    </div>
+                </a>
+                <a href="#" class="navbar-brand-mini">
+                    <img src="../assets/img/mcf-logo-white-notext.svg" alt="">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="main-menu">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#" class="home-tabs"><i class="icon icon-home-house-streamline icon-2x home-icon"></i><span class="home-text">home</span></a></li>
+                    <li><a href="#">mbois festival</a></li>
+                    <li><a href="#">direktori</a></li>
+                    <li><a href="#">kolaborasi</a></li>
+                    <li>
+                        <p class="separator"></p>
+                    </li>
+                    <li class="sign-up">
+                        <a href="#" class="trigger" data-placement="bottom" data-toggle="popover"><img src="../assets/img/Icon_Register.svg" class="navbar-img"> daftar</a>
+                        <!-- <a href="#" class="trigger" data-placement="bottom"><strong>daftar</strong></a> -->
+                        <div class="content hide">
+                            <a href="#" title="Daftar dengan Facebook" class="btn btn-block btn-social-facebook">Daftar dengan facebook</a>
+                            <p>Atau</p>
+                            <a href="#" title="Google Form" class="btn btn-block btn-social-google-form">Google Form</a>
+                        </div>
+                    </li>
+                    <!-- <li><a href="#"><strong>daftar</strong></a></li> -->
+                    <li class="sign-in">
+                        <a href="#" class="trigger" data-placement="bottom" data-toggle="popover"><img src="../assets/img/Icon_Login.svg" class="navbar-img"> masuk</a>
+                        <div class="content hide login-instantiate">
+                            <form action="" method="post">
+                                <div class="form-group">
+                                    <input type="text" name="email" placeholder="E-mail/Username" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" name="password" placeholder="Password" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <input type="submit" name="submit-login" value="masuk" class="btn btn-primary form-control btn-submit">
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <span class="pull-right forgot-password">
+													<a href="#" class="lupa-password">Lupa Kata Sandi ?</a>
+												</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="edit-profile">
+        <div class="container">
+            <div class="row">
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <center>
+                    <div class="upper-title">
+                        <span class="first-title">
+                            SUNTING PROFIL
+                        </span>
+                    </div>
+                </center>
+                <p>&nbsp;</p>
+                <!--                <p class="detail-member-desc">Registrasi</p>-->
+                <form action="" method="post" accept-charset="utf-8">
+                    <div class="col-md-1">
+                        &nbsp;
+                    </div>
+                    <div class="col-md-3">
+
+                        <div class="img-avatar">
+                            <img src="../assets/img/cloud.png" id="img-thumb" height="250" class="img-responsive" align="center">
+
+                            <input type="file" accept="image/png, image/jpeg, image/png" name="img-image" id="img-image" onchange="readURL(this);">
+
+                        </div>
+                        <label for="img-image" class="label-img">
+                            Unggah Logo Komunitas,
+                            <br> Perusahaan atau Profile.
+                            <br> <small>(Best Fit is 250x250 pixels)</small>
+                        </label>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="form-group">
+                            <input name="fullname" type="text" class="form-control" placeholder="Nama">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label class="radio-inline">
+                                    <input type="radio" name="group1" value="" checked>
+                                    <span>Organisasi / Komunitas</span>
+                                </label>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="radio-inline">
+                                    <input type="radio" name="group1" value="">
+                                    <span>Personal</span>
+                                </label>
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <p class="cd-select">
+                                <select name="" class="form-control">
+                                    <option>- Select Category -</option>
+                                    <option value="0">Option 1</option>
+                                    <option value="1">Option 2</option>
+                                    <option value="2">Option 3</option>
+                                </select>
+                            </p>
+
+                        </div>
+                        <div class="form-group">
+                            <input name="phone" type="text" class="form-control" placeholder="Nomor Telepon">
+                        </div>
+                        <div class="form-group email">
+                            <input name="email" type="email" class="form-control" placeholder="Email" value="dito@komaltechno.com" disabled>
+                        </div>
+                        <div class="form-group">
+                            <input name="facebook" type="text" class="form-control" placeholder="Facebook Link">
+                        </div>
+                        <div class="form-group">
+                            <input name="alamat" type="text" class="form-control" placeholder="Alamat">
+                        </div>
+                        <div class="form-group">
+                            <input name="establish" type="text" class="form-control" placeholder="Didirikan Sejak">
+                        </div>
+                        <div class="form-group">
+                            <input name="owner" type="text" class="form-control" placeholder="Pendiri / Owner">
+                        </div>
+                        <div class="form-group">
+                            <input name="employee_count" type="text" class="form-control" placeholder="Jumlah Pegawai">
+                        </div>
+                        <div class="form-group">
+                            <input name="company_type" type="text" class="form-control" placeholder="Jenis Usaha">
+                        </div>
+                        <div class="form-group">
+                            <input name="modal" type="text" class="form-control" placeholder="Modal">
+                        </div>
+                        <div class="form-group">
+                            <input name="data_type" type="text" class="form-control" placeholder="Pendataan">
+                        </div>
+                        <div class="form-group">
+                            <input name="market_target" type="text" class="form-control" placeholder="Target Pemasaran">
+                        </div>
+                        <div class="form-group">
+                            <input name="location" type="text" class="form-control" placeholder="Lokasi">
+                        </div>
+                        <div class="form-group">
+                            <input name="website" type="text" class="form-control" placeholder="Website">
+                        </div>
+                        <div class="form-group frm-button">
+                            <label for="upload-image" class="lblUpload">
+                                <input id="upload-image" type="file" accept="image/jpeg, image/png, image/gif">
+                                <span class="fa fa-file-picture-o fa-3x"></span>
+
+                                <p>Upload Gambar</p>
+                            </label>
+                            <label for="upload-video" class="lblUpload">
+                                <input id="upload-video" type="file" accept="video/x-mpeg2, video/msvideo">
+                                <span class="fa fa-file-video-o fa-3x"></span>
+
+                                <p>Upload Video</p>
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-purple" value="simpan perubahan">
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+                        &nbsp;
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="content-about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <img src="../assets/img/mcf-logo-white.png" alt="MCF Logo" width="105">
+                </div>
+                <div class="col-md-2">
+                    <ul class="about-1">
+                        <li><a href="#">Tentang MCF</a></li>
+                        <!-- <li>Tentang MCF</li> -->
+                        <li><a href="#">Visi</a></li>
+                        <li><a href="#">Misi</a></li>
+                        <li><a href="#">Tujuan</a></li>
+                        <li><a href="#">Program</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="about-2">
+                        <li><a href="#">Direktori Industri Kreatif Kota Malang</a></li>
+                        <li><a href="#">Subsektor Industri Kreatif</a></li>
+                        <li><a href="#">Galery</a></li>
+                        <li><a href="#">Event</a></li>
+                        <li><a href="#">Forum Kolaborasi</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="social-media">
+                        <li><a href="#" class="btn-social"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" class="btn-social"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" class="btn-social"><i class="fa fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="license">
+        <h3>&copy; MCF - Malang Creative Fusion. All rights reserved.</h3>
+    </section>
+    <script type="text/javascript" src="../assets/js/modernizr.js"></script>
+    <script type="text/javascript" src="../assets/js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="../assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="../assets/js/global.js"></script>
+</body>
+
+</html>
