@@ -2196,6 +2196,7 @@ span.input-file-span {
 #semua-pelaku .semua-pelaku-container {
     background-color: #fff;
     box-shadow: 0 0 15px #ddd;
+    border-radius: 3px;
 }
 
 #semua-pelaku .col-md-6 {
@@ -2209,6 +2210,8 @@ span.input-file-span {
     width: 120px;
     -o-object-fit: cover;
     object-fit: cover;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
 }
 
 #semua-pelaku .semua-pelaku-right {
