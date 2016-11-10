@@ -61,7 +61,13 @@ $(function () {
         content: function () {
             return $(this).parent().find('.content').html();
         }
+    });
 
+    $('li>a.trigger.allready-login').popover({
+        html: true,
+        content: function () {
+            return $(this).parent().find('.content').html();
+        }
     });
 
     $('body').on('click', function (e) {
