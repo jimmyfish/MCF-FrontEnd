@@ -786,6 +786,26 @@ hr {
     color: #000;
 }
 
+.btn-tulis-artikel {
+    float: left;
+    background-color: #f8931f;
+    text-transform: uppercase;
+    border-radius: 2px;
+    color: #fff;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    font-weight: 600;
+    font-size: 21px;
+    padding: 0 20px 0 0;
+}
+
+.btn-tulis-artikel .fa {
+    margin-right: 20px;
+    background-color: #e67e22;
+    padding: 15px;
+    font-size: 1.1em;
+}
+
 
 /*-------------
    CONTENT 3
@@ -1514,6 +1534,12 @@ p.inner-desc {
 #detail-event .event-date {
     color: #28B6F6;
     font-size: 1.7em;
+    margin-bottom: 0;
+}
+
+#detail-event .event-tag {
+    color: #999;
+    font-size: 1.5em;
 }
 
 #detail-event .event-time,
@@ -1521,13 +1547,20 @@ p.inner-desc {
     font-size: 1.4em;
 }
 
+#detail-event .description h2 {
+    margin-top: 10px;
+    text-align: justify;
+}
+
 #detail-event p.event-time {
-    margin-bottom: 0;
+    margin-bottom: 15px;
+    color: #666;
 }
 
 #detail-event .event-desc {
     font-size: 1.3em;
     color: #666;
+    text-align: justify;
 }
 
 @media screen and (min-width: 1170px) {
@@ -1913,6 +1946,29 @@ span.input-file-span {
     text-indent: 2em;
     text-align: justify;
     margin-top: 25px;
+}
+
+.artikel-owner {
+    margin-top: 40px;
+}
+
+.artikel-owner-photo img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    max-height: 50px;
+    max-width: 50px;
+    height: 50px;
+    width: 50px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+}
+
+.artikel-owner-name {
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+    vertical-align: middle;
 }
 
 

@@ -138,6 +138,9 @@
         max-width: 275px;
         margin-left: 230px;
     }
+    .detail-berita-content .col-md-3 {
+        margin-left: 0;
+    }
     .product-details {
         text-align: center;
     }
