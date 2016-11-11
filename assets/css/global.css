@@ -204,7 +204,10 @@ ul.nav li.active > a {
 }
 
 #content-about {
-    background-color: #039be6;
+    background-image: url(../img/footer.svg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-color: #0277BD;
     padding: 40px 0;
     width: 100%;
     height: auto;
