@@ -171,7 +171,7 @@ ul.nav li.active > a {
 
 
 /******************
-  SECTION SETTINGS
+SECTION SETTINGS
 *******************/
 
 #content-1 {
@@ -237,6 +237,13 @@ ul.nav li.active > a {
     padding-top: 34px;
     margin-bottom: 100px;
     background-color: #fafafa;
+}
+
+#sponsorship {
+    background-color: #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: auto;
 }
 
 #subsektor {
@@ -363,7 +370,7 @@ ul.nav li.active > a {
 
 
 /*------------------
-      WRAPPER
+  WRAPPER
 ------------------*/
 
 #license h3 {
@@ -505,7 +512,7 @@ hr {
 
 
 /*---------
-  CAROUSEL
+CAROUSEL
 ---------*/
 
 #myCarousel {
@@ -735,6 +742,34 @@ hr {
     margin-left: 25px;
 }
 
+.sponsorship-wrapper {
+    text-align: center;
+}
+
+.sponsorship-wrapper span {
+    margin-right: 5px;
+    min-width: 100px;
+}
+
+.sponsorship-wrapper img {
+    cursor: pointer;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: -webkit-filter .2s ease;
+    transition: -webkit-filter .2s ease;
+    transition: filter .2s ease;
+    transition: filter .2s ease, -webkit-filter .2s ease;
+}
+
+.sponsorship-wrapper img:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    -webkit-transition: -webkit-filter .2s ease;
+    transition: -webkit-filter .2s ease;
+    transition: filter .2s ease;
+    transition: filter .2s ease, -webkit-filter .2s ease;
+}
+
 
 /*------------------------------------------*/
 
@@ -840,7 +875,7 @@ hr {
 
 
 /*-------------
-   CONTENT 3
+CONTENT 3
 -------------*/
 
 .calendar-right {
@@ -950,7 +985,7 @@ hr {
 
 
 /*--------------
-   CONTENT 4
+CONTENT 4
 --------------*/
 
 .hovereffect {
@@ -1298,7 +1333,7 @@ span.forgot-password a {
 
 
 /*---------------------------------------------------
-			DETAIL MEMBER CSS SETTINGS
+        DETAIL MEMBER CSS SETTINGS
 ---------------------------------------------------*/
 
 @media screen and (min-width: 1170px) {
@@ -1339,7 +1374,7 @@ p.inner-desc {
 
 
 /*-------------------------------------------------
-			SUBSEKTOR CSS SETTINGS
+        SUBSEKTOR CSS SETTINGS
 -------------------------------------------------*/
 
 @media screen and (min-width: 1170px) {
@@ -1469,7 +1504,7 @@ p.inner-desc {
 
 
 /*----------------------------------------------------------------
-				DETAIL SUBSEKTOR CSS SETTINGS
+            DETAIL SUBSEKTOR CSS SETTINGS
 ----------------------------------------------------------------*/
 
 #detail-subsektor .img-subsektor {
@@ -1596,7 +1631,7 @@ p.inner-desc {
 
 
 /*-------------------------------------------------------------------
-                        DETAIL EVENT CSS SETTINGS
+                    DETAIL EVENT CSS SETTINGS
 -------------------------------------------------------------------*/
 
 #detail-event .event-date {
@@ -1642,7 +1677,7 @@ p.inner-desc {
 
 
 /*------------------------------------------------------------
-                FORUM LIST CSS SETTING
+            FORUM LIST CSS SETTING
 ------------------------------------------------------------*/
 
 #list-forum p.title {
@@ -1727,7 +1762,7 @@ ul.forum-count li .fa {
 
 
 /*--------------------------------------------------
-            FORUM KOLABORASI CSS SETTING
+        FORUM KOLABORASI CSS SETTING
 --------------------------------------------------*/
 
 #forum-kolaborasi .kolaborasi-title {
@@ -1975,7 +2010,7 @@ span.input-file-span {
 
 
 /*------------------------------------------------------
-                DETAIL BERITA CSS SETTINGS
+            DETAIL BERITA CSS SETTINGS
 ------------------------------------------------------*/
 
 #detail-berita .detail-berita-header img {
@@ -2041,7 +2076,7 @@ span.input-file-span {
 
 
 /*-----------------------------------------------------------
-                    GALLERY CSS SETTING
+                GALLERY CSS SETTING
 -----------------------------------------------------------*/
 
 #gallery img {
@@ -2115,7 +2150,7 @@ span.input-file-span {
 
 
 /*--------------------------------------------------------
-                DETAIL GALLERY CSS SETTING
+            DETAIL GALLERY CSS SETTING
 --------------------------------------------------------*/
 
 #detail-gallery .detail-gallery-title {
@@ -2170,7 +2205,7 @@ span.input-file-span {
 
 
 /*---------------------------------------------------------
-            DIREKTORI CSS SETTINGS
+        DIREKTORI CSS SETTINGS
 ---------------------------------------------------------*/
 
 .title-upper {
@@ -2320,7 +2355,7 @@ span.input-file-span {
 
 
 /*----------------------------------------------
-        SEMUA PELAKU CSS SETTING
+    SEMUA PELAKU CSS SETTING
 ----------------------------------------------*/
 
 #semua-pelaku .semua-pelaku-container {
@@ -2391,7 +2426,7 @@ span.input-file-span {
 
 
 /*------------------------------------------------------------
-                FESTIVAL MBOIS CSS SETTINGS
+            FESTIVAL MBOIS CSS SETTINGS
 ------------------------------------------------------------*/
 
 #festival-mbois .detail-berita-header img {
