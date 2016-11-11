@@ -77,7 +77,8 @@ body {
 .navbar {
     margin-bottom: 0;
     border-radius: 0;
-    min-height: 80px;
+    min-height: 65px;
+    max-height: 65px;
 }
 
 .navbar ul {
@@ -112,9 +113,9 @@ body {
 }
 
 .navbar-brand-mini img {
-    max-height: 50px;
-    height: 50px;
-    margin-top: 15px;
+    max-height: 40px;
+    height: 40px;
+    margin-top: 10px;
 }
 
 .navbar-nav > li > a.allready-login {
@@ -142,8 +143,8 @@ li.sign-in a:not(.lupa-password) {
 
 li.sign-in a:not(.lupa-password),
 li.sign-up a:not(.btn) {
-    margin-top: -12px;
-    padding: 36px 33.5px 24px;
+    margin-top: -4px;
+    padding: 21px 33.5px 16px;
     vertical-align: middle;
 }
 
@@ -190,6 +191,13 @@ ul.nav li.active > a {
 }
 
 #content-3 {
+    width: 100%;
+    height: auto;
+    padding-bottom: 85px;
+    background-color: #f5f5f5;
+}
+
+#calendar-event {
     width: 100%;
     height: auto;
     padding-bottom: 85px;
@@ -809,29 +817,82 @@ hr {
     font-size: 1.1em;
 }
 
+.btn-direktori-event {
+    float: left;
+    background-color: #28b6f6;
+    text-transform: uppercase;
+    border-radius: 2px;
+    color: #fff;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    font-weight: 600;
+    font-size: 21px;
+    padding: 0 80px 0 0;
+    width: 100%;
+}
+
+.btn-direktori-event .fa {
+    margin-right: 20px;
+    background-color: #039be6;
+    padding: 25px;
+    font-size: 1.2em;
+}
+
 
 /*-------------
    CONTENT 3
 -------------*/
 
+.calendar-right {
+    /*    width: 100%;*/
+}
+
+.calendar-right-wrapper {
+    background-color: #fff;
+    box-shadow: 0 0 15px #ccc;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.calendar-right-wrapper img {
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.calendar-right-inner {
+    padding: 10px 25px 20px;
+}
+
+.calendar-right-date {
+    font-size: 1.8em;
+    color: #28B6F6;
+}
+
+.calendar-right-title {
+    font-size: 1.4em;
+    color: #333;
+    text-align: justify;
+}
+
 .content-comment {}
 
 .content-comment img {
-    max-height: 75px;
-    border: 3px solid #cecccf;
+    max-height: 50px;
+    border: 1px solid #cecccf;
     border-radius: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
 }
 
 .content-comment .comment-profile-name {
     margin-left: 20px;
-    font-size: 2em;
+    font-size: 1.6em;
     vertical-align: middle;
     font-weight: 600;
 }
 
 .content-comment .comment-content {
     font-weight: 600;
-    margin-top: 45px;
     line-height: 1.3em;
 }
 
@@ -868,6 +929,10 @@ hr {
 
 .comment-colaboration {
     border-bottom: 1px solid #b3b3b3;
+}
+
+.comment-colaboration .text-count {
+    font-size: 1.4em;
 }
 
 .comment-colaboration .colaboration-text {
@@ -1158,7 +1223,7 @@ span.forgot-password a {
     border-radius: 2px;
     color: #fff;
     text-transform: uppercase;
-    background-color: #039be6;
+    background-color: #f8931f;
     border: none;
     -webkit-transition: all .3s ease-in;
     transition: all .3s ease-in;

@@ -57,10 +57,10 @@
         float: right !important;
     }
     .navbar-nav > li:not(.sign-in):not(.sign-up) > a:not(.home-tabs):not(.allready-login) {
-        padding: 30px 33.5px;
+        padding: 22.5px 20px;
     }
     .nav > li > a.home-tabs {
-        padding: 26px 20px;
+        padding: 19px 20px;
     }
 }
 
@@ -118,7 +118,7 @@
 @media (min-width: 768px) and (max-width: 913px) {
     li.sign-in a:not(.lupa-password),
     li.sign-up a:not(.btn) {
-        padding: 30px 15px;
+        padding: 22.5px 15px;
         margin-top: 0;
     }
 }
