@@ -1133,7 +1133,7 @@ CONTENT 4
     object-fit: cover;
 }
 
-#content-4 .image-popups {
+#content-4 .gallery-image-wrapper {
     background-color: #fff;
     width: 240px;
     min-height: 295px;
@@ -2088,7 +2088,7 @@ span.input-file-span {
     object-fit: cover;
 }
 
-#gallery .image-popups {
+#gallery .gallery-image-wrapper {
     background-color: #fff;
     width: 240px;
     min-height: 295px;
@@ -2101,6 +2101,10 @@ span.input-file-span {
 
 #gallery .gallery-caption {
     padding: 15px;
+}
+
+.image-popups img:hover {
+    cursor: zoom-in;
 }
 
 .gallery-img-date {
@@ -2191,7 +2195,7 @@ span.input-file-span {
     object-fit: cover;
 }
 
-#detail-gallery .image-popups {
+#detail-gallery .gallery-image-wrapper {
     width: 240px;
     min-height: 295px;
 }
