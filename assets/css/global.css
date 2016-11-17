@@ -354,6 +354,14 @@ SECTION SETTINGS
     background-color: #fafafa;
 }
 
+#error-page {
+    height: 91vh;
+    background-color: #0377BE;
+    background-image: url(../img/footer.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
 
 /*-- FOOTER --*/
 
@@ -2492,4 +2500,26 @@ span.input-file-span {
     object-fit: cover;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
+}
+
+#error-page .btn-purple {
+    font-weight: 400;
+    line-height: 1em;
+    font-size: 14px;
+    padding: 10px 30px;
+}
+
+#error-page .error-main-wrapper {
+    text-align: center;
+    color: #fff;
+}
+
+#error-page .error-main-wrapper h1 {
+    font-size: 185px;
+    margin-bottom: 0;
+}
+
+#error-page .error-main-wrapper p {
+    font-size: 50px;
+    font-weight: 300;
 }
