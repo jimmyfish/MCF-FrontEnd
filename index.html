@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
     <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" type="text/css" href="assets/js/fullcalendar-3.0.1/fullcalendar.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="assets/css/global.css">
     <link rel="stylesheet" type="text/css" href="assets/css/global-responsive.css">
     <link rel="icon" type="icon" href="assets/img/mcf-logo.png">
@@ -82,25 +84,54 @@
         </div>
     </nav>
     <section id="content-1">
+        <div id="upper-carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="item">
+                    <img src="assets/img/product/product-1.jpg" class="content-image">
+                    <div class="carousel-caption">
+                        <h3>Malang Cretive Fusion #1</h3>
+                        <p>Aktifitas Malang ini adalah yang nomer 1</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="assets/img/product/product-2.jpg" class="content-image">
+                    <div class="carousel-caption">
+                        <h3>Malang Cretive Fusion #2</h3>
+                        <p>Aktifitas Malang ini adalah yang nomer 2</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="assets/img/product/product-3.jpg" class="content-image">
+                    <div class="carousel-caption">
+                        <h3>Malang Cretive Fusion #3</h3>
+                        <p>Aktifitas Malang ini adalah yang nomer 3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="wrapper-1">
+            <!-- DO NOT EDIT ON THIS -->
             <h1>MCW #1 sebagai identitas malang</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adispiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat</p>
+            <!-- ------------------- -->
             <ul class="controller">
                 <li>
                     <a href="#" class="btn btn-purple">lihat detail</a>
                 </li>
                 <li class="controller-left">
-                    <a href="#" class="controller-left"><i class="fa fa-chevron-left fa-2x"></i></a>
+                    <a href="#upper-carousel" data-slide="prev"><i class="fa fa-chevron-left fa-2x"></i></a>
                 </li>
                 <li class="controller-right">
-                    <a href="#" class="controller-right"><i class="fa fa-chevron-right fa-2x"></i></a>
+                    <a href="#upper-carousel" data-slide="next"><i class="fa fa-chevron-right fa-2x"></i></a>
                 </li>
             </ul>
         </div>
-        <div class="container">
-            <center><a href="#content-2" class="center-btn"><i class="fa fa-chevron-down center-button"></i></a></center>
-        </div>
+
     </section>
+    <div class="container">
+        <center><a href="#content-2" class="center-btn"><i class="fa fa-chevron-down center-button"></i></a></center>
+    </div>
     <section id="content-2">
         <p>&nbsp;</p>
         <div class="container">
@@ -391,9 +422,23 @@
             <p>&nbsp;</p>
             <div class="row">
                 <div class="col-md-7">
-                    <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+                    <canvas id="subsector-chart"></canvas>
                 </div>
-                <div class="col-md-5"></div>
+                <div class="col-md-1">
+                    &nbsp;
+                </div>
+                <div class="col-md-4">
+                    <div class="subsector-legend">
+                        {% for row in cat %}
+                            <p>
+                            <span class="subsector-legend-symbol">
+                                <i class="fa fa-circle" style="color: {{ row.color }};"></i>
+                            </span>
+                                <span>{{ row.name }}</span>
+                            </p>
+                        {% endfor %}
+                    </div>
+                </div>
             </div>
             <p>&nbsp;</p>
             <p>&nbsp;</p>
@@ -552,18 +597,22 @@
     <section id="sponsorship">
         <div class="container">
             
+            <div class="row">
                 <div class="sponsorship-wrapper">
-                    <span><img src="assets/img/logo/bekraf.png"></span>
-                    <span><img src="assets/img/logo/iccn.png"></span>
-                    <span><img src="assets/img/logo/malang.png"></span>
-                    <span><img src="assets/img/logo/dilo.png"></span>
-                    <span><img src="assets/img/logo/adgi.png"></span>
-                    <span><img src="assets/img/logo/stasion.png"></span>
-                    <span><img src="assets/img/logo/katanarsitek.png"></span>
-                    <span><img src="assets/img/logo/hdii.png"></span>
-                    <span><img src="assets/img/logo/aam.png"></span>
-                    <span><img src="assets/img/logo/fam.png"></span>
+                    <div class="col-md-2"><img src="assets/img/logo/bekraf.png" id="sponsor-1"></div>
+                    <div class="col-md-2"><img src="assets/img/logo/iccn.png" id="sponsor-2"></div>
+                    <div class="col-md-2"><img src="assets/img/logo/malang.png" id="sponsor-3"></div>
+                    <div class="col-md-2"><img src="assets/img/logo/dilo.png" id="sponsor-4"></div>
+                    <div class="col-md-2"><img src="assets/img/logo/adgi.png" id="sponsor-5"></div>
+                    <div class="col-md-2"><img src="assets/img/logo/stasion.png" id="sponsor-6"></div>
+                    <div class="col-md-2"><img src="assets/img/logo/katanarsitek.png" id="sponsor-7"></div>
+                    <div class="col-md-2"><img src="assets/img/logo/hdii.png" id="sponsor-8"></div>
+                    <div class="col-md-2"><img src="assets/img/logo/aam.png" id="sponsor-9"></div>
+                    <div class="col-md-2"><img src="assets/img/logo/fam.png" id="sponsor-10"></div>
+                </div>
+            
             </div>
+               
                 
             
         </div>
@@ -606,37 +655,7 @@
     <section id="license">
         <h3>&copy; MCF - Malang Creative Fusion. All rights reserved.</h3>
     </section>
-    <script type="text/javascript">
-        window.onload = function () {
-            var chart = new CanvasJS.Chart("chartContainer", {
-                data: [              
-                    {
-                    // Change type to "doughnut", "line", "splineArea", etc.
-                    type: "column",
-                    dataPoints: [
-                        { label: "1",  y: 10  },
-                        { label: "2",  y: 15  },
-                        { label: "3",  y: 25  },
-                        { label: "4",  y: 30  },
-                        { label: "5",  y: 28  },
-                        { label: "6",  y: 15  },
-                        { label: "7",  y: 25  },
-                        { label: "8",  y: 30  },
-                        { label: "9",  y: 28  },
-                        { label: "10",  y: 15  },
-                        { label: "11",  y: 25  },
-                        { label: "12",  y: 30  },
-                        { label: "13",  y: 28  },
-                        { label: "14",  y: 15  },
-                        { label: "15",  y: 25  },
-                        { label: "16",  y: 30  }
-                    ]
-                }
-                ]
-            });
-            chart.render();
-        }
-        </script>
+    
     <script type=text/javascript src="assets/js/jquery-3.1.1.min.js"></script>
     <script type=text/javascript src="assets/js/fullcalendar-3.0.1/lib/moment.min.js"></script>
         
@@ -644,8 +663,116 @@
     <script type="application/javascript" src="assets/js/fullcalendar-3.0.1/fullcalendar.js"></script>
     <script type=text/javascript src="assets/js/jquery.magnific-popup.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/js/slick.min.js"></script>
+    <script type="text/javascript" src="assets/js/chart.min.js"></script>
     <script type="text/javascript" src="assets/js/global.js"></script>
     <script type="text/javascript" src="assets/js/calendar.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var ctx = $('#subsector-chart');
+            var path = "{{ path('json_canvasjs') }}";
+
+            $.getJSON(path, function (result) {
+                console.log(result);
+                var label = [];
+                var jumlah = [];
+                var backColor = [];
+
+                for (var i in result) {
+                    label.push(result[i].label);
+                    jumlah.push(result[i].jumlah);
+                    backColor.push(result[i].warna);
+                }
+
+                var chartData = {
+                    labels: label,
+                    datasets: [
+                        {
+//                            label: label,
+                            backgroundColor: backColor,
+                            data: jumlah
+                        }
+                    ]
+                };
+
+                var barChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: chartData,
+                    options: {
+                        legend: {
+                            display: false
+                        },
+                        scales: {
+                            xAxes: [{
+                                display: false
+                            }]
+                        }
+                    }
+                });
+            });
+            
+            $('.sponsorship-wrapper').slick({
+                dots:false,
+                infinite:true,
+                slidesToShow:6,
+                autoplay:true,
+                autoplaySpeed:2000,
+                adaptiveHeight: true,
+                arrows:false,
+                draggable:false,
+                responsive: [
+                    {
+                      breakpoint: 1024,
+                      settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                      }
+                    },
+                    {
+                      breakpoint: 600,
+                      settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                      }
+                    },
+                    {
+                      breakpoint: 480,
+                      settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                      }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                  ]
+            });
+            
+            for (var i = 1; i <= 10; i++) {
+                var img = document.getElementById('sponsor-' + i);
+                if (img.clientHeight < 80) {
+                    img.style.height = "60%";
+                }
+            }
+            
+            $('#upper-carousel').find('.item').first().addClass('active');
+            
+            // UPPER CAROUSEL SETTING
+            
+            var caption = $('#upper-carousel div.item:nth-child(1) .carousel-caption');
+            $('.wrapper-1 h1').html(caption.find('h3').html());
+            $('.wrapper-1 p').html(caption.find('p').html());
+            caption.css('display','none');
+            $("#upper-carousel").on('slide.bs.carousel', function(evt) {
+               var caption = $('#upper-carousel div.item:nth-child(' + ($(evt.relatedTarget).index()+1) + ') .carousel-caption');
+               $('.wrapper-1 h1').html(caption.find('h3').html());
+                $('.wrapper-1 p').html(caption.find('p').html());
+               caption.css('display','none');
+            });
+        });
+        </script>
         
 </body>
 </html>
