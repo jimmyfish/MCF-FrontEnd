@@ -406,6 +406,13 @@ ul.nav li.active>a {
     background-color: #fafafa;
 }
 
+[id^=about-mcf] {
+    height: auto;
+    min-height: 200px;
+    background-color: #eee;
+    padding-bottom: 20px;
+}
+
 
 /*-- FOOTER --*/
 
@@ -3111,6 +3118,172 @@ p.mb0 {
     padding: 0 15px;
 }
 
+/*NEW ABOUT DESIGN*/
+
+[id^=about-mcf] .panel {
+    border-radius:2px;
+}
+
+[id^=about-mcf] .panel-heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.panel-red {
+    background-color: #ef5350;
+    color: #fff;
+}
+
+.panel-red > .panel-heading {
+    color:#fff;
+    background-color: #D74B48;
+    border-color: #D74B48;
+}
+
+.panel-purple {
+    background-color: #5c6bc0;
+    color: #fff;
+}
+
+.panel-purple > .panel-heading {
+    color: #fff;
+    background-color: #5360AC;
+    border-color: #5360AC;
+}
+
+.panel-visi > .panel-body {
+    padding: 20px 40px;
+}
+
+.panel-visi h2 {
+    line-height: 1.2em;
+    font-weight: 500;
+}
+
+ul.misi-decimal {
+    list-style-type: decimal;
+}
+
+ul.misi-decimal li {
+    margin-bottom: 10px;
+}
+
+.text-misi {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.about-mcf-2_image {
+    width: 75%;
+    height: auto;
+    margin: 20px auto;
+}
+
+.about-mcf-3_image {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.about-mcf-3_image img {
+    width: 50%;
+    min-width: 320px;
+}
+
+.about-mcf-5_image {
+    width: 75%;
+    height: auto;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.bubble {
+    background-color: #fff;
+    padding:20px 30px;
+    text-align: center;
+    box-shadow: 0 0 5px 0 #ccc;
+    border-radius: 4px;
+}
+
+.bubble-right {
+    margin-left: auto;
+}
+
+.bubble-left {
+    margin-right: auto;
+}
+
+.bubble p {
+    font-size: 2em;
+    margin-bottom: 0;
+    color: #666;
+    font-weight: 300;
+}
+
+.bubble-triangle-wrapper {
+    overflow: hidden;
+    width: auto;
+}
+
+.bubble-triangle {
+    width: 0; 
+    height: 0; 
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #fff;
+    margin:0 auto;
+}
+
+.bubble-wrapper {
+    width: 50%;
+    text-align:center;
+}
+
+.bubble-label {
+    background-color: #ef5350;
+    font-size: 1.5em;
+    border-radius: 0;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.label-sinergi {
+    padding:.7em;
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.sinergi-red {
+    background-color: #ef5350;
+}
+
+.sinergi-blue {
+    background-color: #00acc1;
+}
+
+.sinergi-green {
+    background-color: #43a047;
+}
+
+.sinergi-purple {
+    background-color: #5e35b1;
+}
+
+.text-sinergi {
+    color: #666;
+    font-size: 1.5em;
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 992px) {
+    .bubble-left, .bubble-right {
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+
 @media screen and (max-width: 420px) {
     #myCarousel img {
         min-width: 245px;
@@ -3433,6 +3606,10 @@ p.mb0 {
     #detail-gallery .container,
     #profil-pelaku .container,
     #detail-subsektor .container {
+        width: 1060px;
+    }
+
+    [id^=about-mcf] .container {
         width: 1060px;
     }
     #festival-mbois .festival-mbois-news .col-md-3 {
