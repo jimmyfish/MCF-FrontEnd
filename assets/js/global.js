@@ -22,6 +22,27 @@ function readURL(input) {
 
 (function($) {
     $(document).ready(function() {
+
+        // TENTANG JS
+
+        $('.toggle-desc-wrapper').click(function(e) {
+            e.preventDefault();
+            var wrp = $(this).parents().eq(2).find('.profil-sinergi-desc-toggle');
+
+            wrp.slideToggle('normal', function() {
+                var btn = $(this).parent().find('.profil-sinergi-desc i');
+                
+                if (btn.find('.fa-angle-down') != null) {
+                    btn.removeClass('fa-angle-down')
+                    .addClass('fa-angle-up');
+                } else {
+                    btn.removeClass('fa-angle-up')
+                    .addClass('fa-angle-down');
+                }
+                    
+            });
+        });
+
         /**
          * Default Thumb URL
          * {string}
@@ -340,7 +361,7 @@ function readURL(input) {
             arrows: false,
             appendArrow: firstArrow,
             autoPlay: true,
-            autoplaySpeed:2000
+            autoplaySpeed: 2000
         });
 
         // controller for first slide

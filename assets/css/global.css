@@ -36,6 +36,12 @@ a:hover {
     display: none;
 }
 
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+}
+
 .w100 {
     width: 100% !important;
 }
@@ -170,6 +176,7 @@ ul.nav li.active>a {
     z-index: 1001;
     position: relative;
 }
+
 
 
 /****************** SECTION SETTINGS *******************/
@@ -375,6 +382,7 @@ ul.nav li.active>a {
 }
 
 
+
 /*-- SECTION TENTANG MCF --*/
 
 #tentang-mcf-1 {
@@ -414,6 +422,7 @@ ul.nav li.active>a {
 }
 
 
+
 /*-- FOOTER --*/
 
 #license {
@@ -426,6 +435,7 @@ ul.nav li.active>a {
     color: #fff;
     font-weight: 700;
 }
+
 
 
 /*------------------   WRAPPER ------------------*/
@@ -570,6 +580,7 @@ ul.controller>li>a.btn:hover {
 }
 
 
+
 /*--------------------------------------------------------*/
 
 hr {
@@ -599,6 +610,7 @@ hr {
     /*margin-left: 33.5%;*/
     margin-top: 3.7px;
 }
+
 
 
 /*--------- CAROUSEL ---------*/
@@ -929,6 +941,7 @@ hr {
 }
 
 
+
 /*------------------------------------------*/
 
 .btn-purple {
@@ -1048,6 +1061,7 @@ hr {
     padding: 25px;
     font-size: 1.2em;
 }
+
 
 
 /*------------- CONTENT 3 -------------*/
@@ -1193,6 +1207,7 @@ hr {
 }
 
 
+
 /*-------------- CONTENT 4 --------------*/
 
 .hovereffect {
@@ -1292,6 +1307,7 @@ hr {
 }
 
 
+
 /*---------------------------------------------------------*/
 
 .content-product {
@@ -1362,6 +1378,7 @@ hr {
 .subsector-legend-symbol {
     margin-right: 5px;
 }
+
 
 
 /*---------------------------------------------------------*/
@@ -1547,6 +1564,7 @@ span.forgot-password a {
 }
 
 
+
 /*---------------------------------------------------         DETAIL MEMBER CSS SETTINGS ---------------------------------------------------*/
 
 @media screen and (min-width: 1170px) {
@@ -1584,6 +1602,7 @@ p.inner-desc {
 #detail-member p>a.btn {
     margin-top: 25px;
 }
+
 
 
 /*-------------------------------------------------         SUBSEKTOR CSS SETTINGS -------------------------------------------------*/
@@ -1718,6 +1737,7 @@ p.inner-desc {
 }
 
 
+
 /*----------------------------------------------------------------             DETAIL SUBSEKTOR CSS SETTINGS ----------------------------------------------------------------*/
 
 #detail-subsektor .img-subsektor {
@@ -1759,6 +1779,7 @@ p.inner-desc {
     text-align: center;
     font-weight: 300;
 }
+
 
 
 /*TENTANG MCF PAGE SETTING*/
@@ -1843,6 +1864,7 @@ p.inner-desc {
 }
 
 
+
 /*-------------------------------------------------------------------                     DETAIL EVENT CSS SETTINGS -------------------------------------------------------------------*/
 
 #detail-event .event-date {
@@ -1885,6 +1907,7 @@ p.inner-desc {
         color: #28B6F6;
     }
 }
+
 
 
 /*------------------------------------------------------------             FORUM LIST CSS SETTING ------------------------------------------------------------*/
@@ -2011,6 +2034,7 @@ ul.forum-count li .fa {
     font-size: 1.2em;
     font-weight: 200;
 }
+
 
 
 /*--------------------------------------------------         FORUM KOLABORASI CSS SETTING --------------------------------------------------*/
@@ -2292,6 +2316,7 @@ span.input-file-span {
 }
 
 
+
 /*------------------------------------------------------             DETAIL BERITA CSS SETTINGS ------------------------------------------------------*/
 
 #detail-berita .detail-berita-header img {
@@ -2354,6 +2379,7 @@ span.input-file-span {
     color: #666;
     vertical-align: middle;
 }
+
 
 
 /*-----------------------------------------------------------                 GALLERY CSS SETTING -----------------------------------------------------------*/
@@ -2432,6 +2458,7 @@ span.input-file-span {
 }
 
 
+
 /*--------------------------------------------------------             DETAIL GALLERY CSS SETTING --------------------------------------------------------*/
 
 #detail-gallery .detail-gallery-title {
@@ -2483,6 +2510,7 @@ span.input-file-span {
     margin-right: auto;
     width: 100%;
 }
+
 
 
 /*---------------------------------------------------------         DIREKTORI CSS SETTINGS ---------------------------------------------------------*/
@@ -2633,6 +2661,7 @@ span.input-file-span {
 }
 
 
+
 /*----------------------------------------------     SEMUA PELAKU CSS SETTING ----------------------------------------------*/
 
 #semua-pelaku .semua-pelaku-container {
@@ -2700,6 +2729,7 @@ span.input-file-span {
     margin-right: 25px;
     color: #444;
 }
+
 
 
 /*------------------------------------------------------------             FESTIVAL MBOIS CSS SETTINGS ------------------------------------------------------------*/
@@ -3068,6 +3098,7 @@ p.mb0 {
 }
 
 
+
 /*FORCING THE SELECT2 STYLE*/
 
 .select2 {
@@ -3118,10 +3149,11 @@ p.mb0 {
     padding: 0 15px;
 }
 
+
 /*NEW ABOUT DESIGN*/
 
 [id^=about-mcf] .panel {
-    border-radius:2px;
+    border-radius: 2px;
 }
 
 [id^=about-mcf] .panel-heading {
@@ -3136,8 +3168,8 @@ p.mb0 {
     color: #fff;
 }
 
-.panel-red > .panel-heading {
-    color:#fff;
+.panel-red>.panel-heading {
+    color: #fff;
     background-color: #D74B48;
     border-color: #D74B48;
 }
@@ -3147,13 +3179,13 @@ p.mb0 {
     color: #fff;
 }
 
-.panel-purple > .panel-heading {
+.panel-purple>.panel-heading {
     color: #fff;
     background-color: #5360AC;
     border-color: #5360AC;
 }
 
-.panel-visi > .panel-body {
+.panel-visi>.panel-body {
     padding: 20px 40px;
 }
 
@@ -3200,7 +3232,7 @@ ul.misi-decimal li {
 
 .bubble {
     background-color: #fff;
-    padding:20px 30px;
+    padding: 20px 30px;
     text-align: center;
     box-shadow: 0 0 5px 0 #ccc;
     border-radius: 4px;
@@ -3227,29 +3259,29 @@ ul.misi-decimal li {
 }
 
 .bubble-triangle {
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     border-top: 15px solid #fff;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 .bubble-wrapper {
     width: 50%;
-    text-align:center;
+    text-align: center;
 }
 
 .bubble-label {
     background-color: #ef5350;
     font-size: 1.5em;
     border-radius: 0;
-    font-weight: 500;
+    font-weight: 300;
     margin-top: 20px;
 }
 
 .label-sinergi {
-    padding:.7em;
+    padding: .7em;
     border-radius: 50%;
     font-size: 16px;
     font-weight: 500;
@@ -3277,10 +3309,162 @@ ul.misi-decimal li {
     margin-left: 15px;
 }
 
-@media screen and (max-width: 992px) {
-    .bubble-left, .bubble-right {
-        margin-left:auto;
-        margin-right:auto;
+.centered-margin {
+    margin:0 auto;
+}
+
+.no-padding {
+    padding:0;
+}
+
+.no-float {
+    float: none;
+}
+
+.profil-sinergi-wrapper {
+    background-color: #fff;
+    float: none;
+    width: 80%;
+    padding:15px 0;
+    min-height: 80px;
+    height: auto;
+    vertical-align: middle;
+    box-shadow: 0 0 5px #ccc;
+    border-radius: 3px;
+}
+
+.profil-sinergi-img {
+    position: relative;
+    max-width: 115px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border:7.5px solid #fff;
+    z-index: 1001;
+    border-radius: 50%;
+    margin-top: -25%;
+    margin-left: -50px;
+    box-shadow: 0 0 5px #ccc;
+}
+
+.profil-sinergi-name {
+    margin-bottom: 0;
+    color: #666;
+}
+
+.profil-sinergi-rank {
+    color: #29b6f6;
+    margin-bottom: 0;
+}
+
+.profil-sinergi-desc {
+    font-size: 18px;
+    overflow-y: hidden;
+    max-height: 80px;
+}
+
+.profil-sinergi-desc-toggle {
+    padding-left: 110px;
+    width: 120%;
+    display: none;
+}
+
+.profil-sinergi-desc-toggle hr {
+    width: 100%;
+    border:1pt solid #bdbdbd;
+}
+
+.profil-sinergi-desc-toggle p {
+    color: rgba(0,0,0,.5);
+    font-weight: 500;
+}
+
+.toggle-desc-wrapper {
+    position: absolute;
+    right: -75px;
+    z-index: 1;
+    font-weight: bold;
+    transform: translateY(-50%);
+    height: 80px;
+}
+
+.label-social {
+    background-color: #29b6f6;
+    padding:.5em .8em;
+    border-radius: 50%;
+    font-size: 1.3em;
+    color: #fff !important;
+}
+
+.profil-sinergi-label {
+    color: #666 !important;
+}
+
+.outer-wrapper {
+    height: 40px;
+    vertical-align: middle;
+    padding:0;
+}
+
+.magic {
+    top:50%;
+    transform: translateY(-50%);
+}
+
+@media screen and (min-width:992px) {
+    .toggle-desc-wrapper {
+        right: -100px;
+    }
+    .profil-sinergi-wrapper {
+        width: 75%;
+    }
+    .profil-sinergi-img {
+        margin-top: -23%;
+    }
+    .carousel-wrapper {
+        width: 24%;
+    }
+    .carousel-wrapper h3 {
+        line-height: 25px;
+        max-height: 50px;
+        overflow: hidden;
+    }
+    #list-forum .list-forum-content .col-md-6 {
+        width: 45.6%;
+    }
+    .wrapper-1 {
+        margin-left: 120px;
+    }
+    #forum-kolaborasi .container,
+    #edit-profile .container,
+    #detail-berita .container,
+    #galery .container,
+    #semua-pelaku .container,
+    #festival-mbois .container,
+    #detail-gallery .container,
+    #profil-pelaku .container,
+    #detail-subsektor .container {
+        width: 1060px;
+    }
+
+    [id^=about-mcf] .container {
+        width: 1060px;
+    }
+    #festival-mbois .festival-mbois-news .col-md-3 {
+        margin-bottom: 50px;
+    }
+    .forum-populer-left .reputation-title {
+        margin-left: 20px;
+    }
+    .forum-populer-left .reputation-count {
+        margin-left: 80px;
+    }
+    #forum-kolaborasi .list-forum-content .col-md-6 {
+        width: 45.6%;
+    }
+    .title-upper {
+        margin-left: 150px;
+        text-align: left;
     }
 }
 
@@ -3327,6 +3511,11 @@ ul.misi-decimal li {
 }
 
 @media screen and (max-width: 992px) {
+    .bubble-left,
+    .bubble-right {
+        margin-left: auto;
+        margin-right: auto;
+    }
     .profile-left {
         margin-bottom: 30px;
     }
@@ -3426,6 +3615,7 @@ ul.misi-decimal li {
         display: none;
     }
 }
+
 
 
 /*---------------------------------------     MIGRATING FROM GLOBAL RESPONSIVE ---------------------------------------*/
@@ -3582,54 +3772,6 @@ ul.misi-decimal li {
     }
 }
 
-@media screen and (min-width:992px) {
-    .carousel-wrapper {
-        width: 24%;
-    }
-    .carousel-wrapper h3 {
-        line-height: 25px;
-        max-height: 50px;
-        overflow: hidden;
-    }
-    #list-forum .list-forum-content .col-md-6 {
-        width: 45.6%;
-    }
-    .wrapper-1 {
-        margin-left: 120px;
-    }
-    #forum-kolaborasi .container,
-    #edit-profile .container,
-    #detail-berita .container,
-    #galery .container,
-    #semua-pelaku .container,
-    #festival-mbois .container,
-    #detail-gallery .container,
-    #profil-pelaku .container,
-    #detail-subsektor .container {
-        width: 1060px;
-    }
-
-    [id^=about-mcf] .container {
-        width: 1060px;
-    }
-    #festival-mbois .festival-mbois-news .col-md-3 {
-        margin-bottom: 50px;
-    }
-    .forum-populer-left .reputation-title {
-        margin-left: 20px;
-    }
-    .forum-populer-left .reputation-count {
-        margin-left: 80px;
-    }
-    #forum-kolaborasi .list-forum-content .col-md-6 {
-        width: 45.6%;
-    }
-    .title-upper {
-        margin-left: 150px;
-        text-align: left;
-    }
-}
-
 @media screen and (min-width:1210px) {
     .navbar-nav:not(.pull-right) {
         margin-left: 78px;
@@ -3666,6 +3808,10 @@ ul.misi-decimal li {
 @media screen and (max-width:772px) {
     .upper-title {
         margin: 110px auto 60px;
+    }
+
+    .toggle-desc-wrapper {
+        right: -50px;
     }
 }
 
