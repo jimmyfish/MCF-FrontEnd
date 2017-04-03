@@ -29,19 +29,10 @@ function readURL(input) {
             e.preventDefault();
             var wrp = $(this).parents().eq(2).find('.profil-sinergi-desc-toggle');
 
-            wrp.slideToggle('normal', function() {
-                var btn = $(this).parent().find('.profil-sinergi-desc i');
-                
-                if (btn.find('.fa-angle-down') != null) {
-                    btn.removeClass('fa-angle-down')
-                    .addClass('fa-angle-up');
-                } else {
-                    btn.removeClass('fa-angle-up')
-                    .addClass('fa-angle-down');
-                }
-                    
-            });
+            wrp.slideToggle();
         });
+
+        $('.profil-sinergi-desc-toggle').first().show();
 
         /**
          * Default Thumb URL

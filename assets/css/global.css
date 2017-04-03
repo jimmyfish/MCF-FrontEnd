@@ -418,7 +418,7 @@ ul.nav li.active>a {
     height: auto;
     min-height: 200px;
     background-color: #eee;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 }
 
 
@@ -2271,8 +2271,25 @@ ul.forum-count li .fa {
     margin-bottom: 25px;
 }
 
+.mb50 {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
 .mt10 {
     margin-top: 10px;
+}
+
+.h0 {
+    height: 0;
+}
+
+.text-blue {
+    color: #0277BD;
+}
+
+.text-grey {
+    color: #666;
 }
 
 .form-terbitkan input[type="text"] {
@@ -3336,6 +3353,8 @@ ul.misi-decimal li {
 .profil-sinergi-img {
     position: relative;
     max-width: 115px;
+    min-height: 115px;
+    min-width: 115px;
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -3370,7 +3389,7 @@ ul.misi-decimal li {
 }
 
 .profil-sinergi-desc-toggle hr {
-    width: 100%;
+    width: 95%;
     border:1pt solid #bdbdbd;
 }
 
@@ -3528,7 +3547,7 @@ ul.misi-decimal li {
     .carousel-wrapper {
         width: 49%;
     }
-    .col-md-3 {
+    .col-md-3:not(.outer-wrapper) {
         max-width: 275px;
         margin-left: auto;
         margin-right: auto;
@@ -3589,6 +3608,11 @@ ul.misi-decimal li {
     }
     .multi-item-carousel .carousel-inner .prev {
         left: -48%;
+    }
+    .outer-wrapper {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        display: none;
     }
 }
 
